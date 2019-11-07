@@ -1,9 +1,30 @@
+/*
 #TestImage {
     max-width: 100%;
     height: auto;
-}
+} */
 
 html, body {
-    padding: 0;
     margin: 0;
+    height: 100%;
 }
+
+#homePage {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    background: #c01629;
+}
+
+#TestImage {
+    margin-left: -200px;
+    margin-top: -200px;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    z-index: 10;
+}
+
+
