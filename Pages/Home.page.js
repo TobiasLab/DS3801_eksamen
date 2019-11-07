@@ -1,7 +1,7 @@
 const HomePage = {
     template: `
                 <div>
-                    <h1>{{title}}</h1>
+                    <img src="Bilder\RedTestLogo.png"
                     
                 </div>
             `,
@@ -13,4 +13,4 @@ const HomePage = {
     }
 }
 
-export default HomePage;
+export default LoginPage;
