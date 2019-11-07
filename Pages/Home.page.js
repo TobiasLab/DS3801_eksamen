@@ -1,7 +1,7 @@
 const HomePage = {
     template: `
                 <div>
-                    <img src="./Bilder/RedTestLogo.png">
+                    <img id="TestImage" src="./Bilder/RedTestLogo.png">
                     
                 </div>
             `,
