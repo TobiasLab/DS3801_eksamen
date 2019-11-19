@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
 
@@ -12,44 +11,36 @@
 
     <title>Studentklinikken</title>
 </head>
-
 <body>
-
     <div class="wrapper">
-
         <!--Left side background  -->
-        <div class="bg">
+        <div class="col_left">
             <div class="container">
-            <img src="Bilder/HK_Logo_icon.png" id="logo">
-            <h1 id="bg_title">Studentklinikken</h1>
+                <img src="Bilder/HK_Logo_icon_2.png" id="logo_img">
+                <h1>Studentklinikken</h1>
+                <h2>Ansatt</h2>
             </div>
         </div>
         <!--right side background  -->
-        <div class="bg_right">
+        <div class="col_right">
             <div class="container">
-                <h1 id="info">Velkommen tilbake</h1>
+                <h2 id="info">Velkommen tilbake</h2>
                 <h4 id="info2">Log in for å få oversikt over egen timeliste, kunde-hendelser, tidligere behandlinger og ledige tider</h4>
-                <a href="#" class="btn btn-info" id="log_in_button" role="button">Log in</a>
+                <form>
+                    <div class="input-group" id="input_group1">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-group" id="input_group2">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <a href="ansatt(dashbord).html" class="btn btn-info" id="log_in_button" role="button">Log in</a>
+                </form>
             </div>
         </div>
-
-             <div class="container" id="input_log">
-            <form>
-                <div class="input-group" id="input_group1">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                </div>
-                
-                <div class="input-group" id="input_group2">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-                </div>
-                
-            </form>
-        </div>
-
-
-
-
     </div>
-</body></html>
+!-- JS function for sidebar active -->
+<script src="Pages/ansatt.js"></script>
+</body>
+</html>

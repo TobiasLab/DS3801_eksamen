@@ -3,58 +3,69 @@ body {
     height: 100%;
 }
 
-.bg {
+h1 {
+    text-align: center;
+    font-size: 250%;
+    color: white;
+    font-weight: 200
+}
+
+h4{
+  font-size: 12px;  
+}
+
+.col_left {
+    position: fixed;
     background-color: #50297A;
     height: 100%;
     width: 50%;
-    position: fixed;
-}
-
-#logo {
-    height: 20%;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 15%;
-}
-
-#bg_title {
     text-align: center;
-    font-size: 45px;
-    color: white;
+    vertical-align: middle;
+    padding-top: 20%
+    
 }
 
-.bg_right{
+#logo_img {
+    margin-bottom: 15px;
+    height: 120px;
+    width: 120px;
+}
+
+.col_right{
+    position: fixed;
+    margin-top: 20%;
     background-color: white;
     height: 100%;
     width: 50%;
-    position: fixed;
-    margin-left: 50%;
-}
-
-#info {
-    margin-top: 35%;
+    left: 50%;
     text-align: center;
 }
 
-#info2 {
-    margin-top: 1%;
-    text-align: center;
-    font-size: 15px;
+.container{
+    width: 50%;
 }
 
-#input_log {
-    position: absolute;
-    margin-top: 22%;
-    width: 25%;
-    margin-left: 62%;
+@media only screen and (max-width: 1250px) {
+    .container{
+        width: 70%;
+    }
 }
+
 
 #log_in_button {
     align-content: center;
-    margin-left: 40%;
-    margin-top: 12%;
+    vertical-align: middle;
     width: 150px;
     background-color: #50297A;
+    border-radius: 7px;
+    border: 0;
+    font-size: 13px;
+    height: 35px;
+}
+
+
+.input-group{
+    margin-bottom: 10px;
 }
 
 

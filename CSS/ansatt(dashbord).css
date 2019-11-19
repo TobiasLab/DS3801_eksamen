@@ -1,0 +1,76 @@
+html,
+body {
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+.col-left {
+    background-color: #ffffff;
+    box-shadow: 10px grey;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    text-align: center;
+    padding-top: 10%
+}
+
+.bg_right {
+    background-color: #50297A;
+    height: 8%;
+    width: 100%;
+    position: fixed;
+}
+
+#bg_title {
+    font-size: 25px;
+    color: darkslateblue;
+    padding-top: 5%;
+}
+
+#profile {
+    width: 120px;
+    height: 120px; 
+}
+
+.nav-link{
+    color: black;
+}
+
+.navbar-nav {
+    text-align: center;
+    width: 100%;
+
+    
+}
+
+.nav-link:hover{
+    color: rebeccapurple;
+}
+
+#bg_title_2 {
+    font-size: 25px;
+    color: white;
+    margin-left: -150%;
+    margin-top: -4%
+    
+}
+
+.object {
+    padding-top: 30%;
+    width: 50%;
+}
+
+#logo {
+    width: 5%;
+    margin-top: 2%;
+    margin-left: -190%;
+}
+
+
+
+#bg_title_3 {
+    font-size: 25px;
+    margin-top: 2%;
+    color: darkgrey
+    
+}
