@@ -20,3 +20,11 @@ function status() {
     console.log('You are not in :(');
   }
 }
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );

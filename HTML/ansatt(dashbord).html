@@ -9,6 +9,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/CSS/ansatt(dashbord).css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <title>Studentklinikken</title>
 </head>
@@ -20,7 +24,7 @@
         <!--Left side background  -->
         <div class="col-left">
             <div class="container menu">
-                <img src="Bilder/eqwjk03002_hertruckerjkt,l_grt0_frt1.jpg" id="profile" class="rounded-circle" alt="Cinque Terre">
+                <img src="/Bilder/eqwjk03002_hertruckerjkt,l_grt0_frt1.jpg" id="profile" class="rounded-circle" alt="Cinque Terre">
                 <h1 id="bg_title">Helene. K</h1>
                 <!-- A vertical navbar -->
                 <nav class="navbar">
@@ -28,10 +32,10 @@
                     <!-- Links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Dashbord</a>
+                            <a class="nav-link" id="dash-active" href="#">Dashbord</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Timeliste</a>
+                            <a class="nav-link" href="/HTML/ansatt(timeliste).html">Timeliste</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Historikk</a>
@@ -50,13 +54,14 @@
 
         <div class="bg_right">
             <div class="container top">
-            <img src="Bilder/HK_Logo_icon_2.png" id="logo">
             <h1 id="bg_title_2">Studentklinikken | Ansatt</h1>
             </div>
         </div>
 
         <div class="box">
             <div class="container object">
+                <div id="box">Antall kunder<h5>3</h5></div>
+                <div id="box2">Antall fullført<h5>10</h5></div>
                 <h1 id="bg_title_3">Oversikt: timeliste</h1>
                 <table class="table table-striped">
                     <thead>
