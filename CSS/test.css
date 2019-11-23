@@ -36,3 +36,47 @@ html, body {
     left: 50%;
     margin-left: -145px;
 }
+
+@keyframes test {
+    from {bottom: -30%}
+    to {bottom: 0}
+}
+
+#loginBox {
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    animation-duration: 1s;
+    animation-name: test;
+}
+
+#log_in_button {
+    align-content: center;
+    vertical-align: middle;
+    width: 150px;
+    background-color: #50297A;
+    border-radius: 7px;
+    border: 0;
+    font-size: 13px;
+    height: 35px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 250%;
+    color: white;
+    font-weight: 200
+}
+
+h4{
+  font-size: 12px;  
+}
+
+.input-group{
+    margin-bottom: 10px;
+}
+
