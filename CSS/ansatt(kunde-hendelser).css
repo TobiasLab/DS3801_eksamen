@@ -32,10 +32,10 @@ body {
     height: 120px; 
 }
 
-#dash-active{
+
+#time-active{
     font-weight:bolder;
 }
-
 
 .nav-link{
     color: black;
@@ -65,8 +65,20 @@ body {
 }
 
 .object {
-    padding-top: 30%;
-    width: 50%;
+    padding-top: 10%;
+    width: 55%;
+    
+}
+th {
+    font-weight: 400;
+}
+
+#status {
+    color: limegreen;
+}
+
+#status-2 {
+    color: royalblue
 }
 
 .top {
@@ -82,21 +94,24 @@ body {
     
 }
 
-#box{
-    background-color: #ffffff;
-    -webkit-box-shadow: 1px 1px 1px 1px rgba(214, 214, 214, 0.5);
-    -moz-box-shadow: 1px 1px 1px 1px rgba(214, 214, 214, 0.5);
-    box-shadow: 1px 1px 1px 1px rgba(214, 214, 214, 0.5);
-    height: 100%;
-    width: 100%;
-    margin-top: -40%;
-        
+#nav-active {
+    background-color: #50297A;
 }
 
-h5 {
-    margin-top: 5%;
-    padding-bottom: 10%;
-    font-size: 20px;
-    margin-left: 5%;
-    
+.md-form {
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+#buttton_view {
+    background-color: dodgerblue;
+}
+
+.modal-body {
+    position: relative;
+}
+
+#modal-text{
+    position: relative;
+    text-align: center;
 }

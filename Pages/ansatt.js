@@ -1,10 +1,10 @@
 var loggedIn = false;
 
 function authenticate() {
-  var password = document.getElementById('password').value;
-  
-  loggedIn = login(password);
-  status();
+    var password = document.getElementById('password').value;
+
+    loggedIn = login(password);
+    status();
 }
 
 function login(password) {
@@ -14,20 +14,20 @@ function login(password) {
 }
 
 function status() {
-  if(loggedIn) {
-    console.log('You are in :)');
-  } else {
-    console.log('You are not in :(');
-  }
+    if (loggedIn) {
+        console.log('You are in :)');
+    } else {
+        console.log('You are not in :(');
+    }
 }
 
 $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
+    $('#myInput').trigger('focus')
 })
 
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
+$(function () {
+    $("#datepicker").datepicker();
+});
 
 
 //Drag and drop function
@@ -135,7 +135,3 @@ function saveForm() {
 
 }
 
-//Delete Item
-function deleteFunction(item) {
-    item.parentElement.remove();
-}
