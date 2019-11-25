@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.1.3/vue-router.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/CSS/ansatt(notat).css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <title>Studentklinikken</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!--Left side background  -->
+        <div class="col-left">
+            <div class="container menu">
+                <img src="/Bilder/eqwjk03002_hertruckerjkt,l_grt0_frt1.jpg" id="profile" class="rounded-circle" alt="Cinque Terre">
+                <h1 id="bg_title">Helene. K</h1>
+                <!-- A vertical navbar -->
+                <nav class="navbar">
+
+                    <!-- Links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/ansatt(dashbord).html">Dashbord</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/ansatt(timeliste).html">Timeliste</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Historikk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="note-active" href="#">Notat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/ansatt%20(home).html">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="bg_right">
+            <div class="container top">
+                <h1 id="bg_title_2">Studentklinikken | Ansatt</h1>
+            </div>
+        </div>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+            </button>
+
+            <h2 class="pt-4" contenteditable="true">My project</h2>
+            <div class="line"></div>
+            <div id="board">
+                <div><button id="addItem">New</button></div>
+
+                <div id="todo" class="boardProgress">
+                    <h4 id="boardTodo">To do</h4>
+                    <p></p>
+                    <div class="dragItems">
+                        <i class="far fa-trash-alt" onclick="deleteFunction(this)"></i>
+                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
+                        <h6 id="taskNameItem">Prototype evaluation</h6>
+                        <span id="taskTagItem" class="badge-outline">Tag</span>
+                        <p id="taskDescItem">- Description<br>- Description</p>
+                        <p class="deadline" id="taskDateItem">07.06.2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Popup Modal for content edit-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit assignment</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Task:</label>
+                                <input type="text" class="form-control" id="taskName">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Description:</label>
+                                <textarea class="form-control" id="taskDescription"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tag:</label>
+                                <input type="text" class="form-control" id="taskTag">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Assign to:</label>
+                                <input type="text" class="form-control" id="taskUser">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Deadline:</label>
+                                <input type="text" class="form-control" id="taskDate">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveForm()">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="/Pages/ansatt.js"></script>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    </div>
+</body></html>

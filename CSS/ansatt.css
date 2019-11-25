@@ -7,11 +7,14 @@ h1 {
     text-align: center;
     font-size: 250%;
     color: white;
-    font-weight: 200
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
 }
 
-h4{
-  font-size: 12px;  
+h2 {}
+
+h4 {
+    font-size: 12px;
 }
 
 .col_left {
@@ -22,10 +25,9 @@ h4{
     text-align: center;
     vertical-align: middle;
     padding-top: 20%
-    
 }
 
-#col_left_h2{
+#col_left_h2 {
     color: white;
     font-size: 25px;
 }
@@ -36,7 +38,7 @@ h4{
     width: 120px;
 }
 
-.col_right{
+.col_right {
     position: fixed;
     margin-top: 20%;
     background-color: white;
@@ -46,12 +48,12 @@ h4{
     text-align: center;
 }
 
-.container{
+.container {
     width: 50%;
 }
 
 @media only screen and (max-width: 1250px) {
-    .container{
+    .container {
         width: 70%;
     }
 }
@@ -69,8 +71,6 @@ h4{
 }
 
 
-.input-group{
+.input-group {
     margin-bottom: 10px;
 }
-
-
