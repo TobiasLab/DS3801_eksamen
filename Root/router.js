@@ -1,4 +1,4 @@
-import HomePage from "./Pages/Home.page.js"
+import HomePage from "../Pages/Home.page.js"
 
 const router = new VueRouter({
     routes: [
