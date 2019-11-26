@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.1.3/vue-router.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/BrukerStyling/homePage.css">
+
+    <title id>Studentklinikken</title>
+</head>
+
+<body>
+    <div id="homePage">
+                
+        <img id="TestImage" src="/Bilder/HK_logo_icon.png">
+        <h3 id="TestTitle">Studentklinikken</h3>
+        <div v-show="elementVisible" id="loginBox">
+            
+            <div class="container">
+                <h2 id="info">Velkommen tilbake</h2>
+                <h4 id="info2">Log in for å få oversikt over egen timeliste, kunde-hendelser, tidligere behandlinger og ledige tider</h4>
+                <form>
+                    <div class="input-group" id="input_group1">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="input-group" id="input_group2">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <a href="/Pages/LandingPage" class="btn btn-info" id="log_in_button" role="button">Logg inn</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/Pages/Home.page.js"></script>
+
+</body>
+
+</html>
