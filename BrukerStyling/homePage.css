@@ -54,6 +54,10 @@ html, body {
     animation-name: test;
 }
 
+.hide {
+    display: none;
+}
+
 #log_in_button {
     align-content: center;
     vertical-align: middle;
