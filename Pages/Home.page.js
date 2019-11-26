@@ -1,4 +1,4 @@
-const HomePage = {
+/*const HomePage = {
     template: `
                 <div id="homePage">
                 
@@ -35,9 +35,9 @@ const HomePage = {
 }
 
 export default HomePage;
+*/
 
-
-/*var email = document.getElementById('email');
+var email = document.getElementById('email');
 var password = document.getElementById('password');
 var loginTest = document.getElementById('lon_in_button').addEventListener("click", function() {
     emailTest = 123;
@@ -50,4 +50,11 @@ var loginTest = document.getElementById('lon_in_button').addEventListener("click
             alert("You've typed the wrong email/password");
         }
     }
-}) */
+}) 
+
+/*
+function created() {
+    var elementVisible = false;
+    setTimeout(() => this.elementVisible = true, 3000)
+}
+*/
