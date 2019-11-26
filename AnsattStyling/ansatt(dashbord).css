@@ -29,30 +29,30 @@ body {
 
 #profile {
     width: 120px;
-    height: 120px; 
+    height: 120px;
 }
 
-#dash-active{
-    font-weight:bolder;
+#dash-active {
+    font-weight: bolder;
 }
 
 
-.nav-link{
+.nav-link {
     color: black;
 }
 
 .navbar-nav {
     text-align: center;
     width: 100%;
-    
+
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rebeccapurple;
 }
 
 #logo {
-    width: 5%; 
+    width: 5%;
     margin-left: -8%;
 }
 
@@ -61,12 +61,11 @@ body {
     font-size: 25px;
     color: white;
     margin-left: 35%
-    
 }
 
 .object {
-    padding-top: 30%;
-    width: 50%;
+    padding-top: 10%;
+    width: 55%;
 }
 
 .top {
@@ -79,10 +78,10 @@ body {
     font-size: 25px;
     margin-top: 10%;
     color: darkgrey;
-    
+
 }
 
-#box{
+#box {
     background-color: #ffffff;
     -webkit-box-shadow: 1px 1px 1px 1px rgba(214, 214, 214, 0.5);
     -moz-box-shadow: 1px 1px 1px 1px rgba(214, 214, 214, 0.5);
@@ -90,7 +89,7 @@ body {
     height: 100%;
     width: 100%;
     margin-top: -40%;
-        
+
 }
 
 h5 {
@@ -98,6 +97,17 @@ h5 {
     padding-bottom: 10%;
     font-size: 20px;
     margin-left: 5%;
+    font-weight: bold;
+    color: #50297A;
+}
 
-    
+.card-title {
+    margin-top: -0.5%;
+    margin-bottom: -8%
+}
+
+.card-header{
+    font-weight: 300;
+    color: #50297A;
+
 }

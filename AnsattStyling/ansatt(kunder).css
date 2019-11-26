@@ -19,6 +19,7 @@ body {
     height: 8%;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 #bg_title {
@@ -114,6 +115,7 @@ h2 {
 .col-4 {
     margin-left: 22%;
     margin-top: 6%;
+    z-index: 0;
 }
 
 .col-8 {

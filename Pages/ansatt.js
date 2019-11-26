@@ -135,3 +135,22 @@ function saveForm() {
 
 }
 
+//Function for card, toggle between the customers onClick
+$(function() {
+    $('#list-profile-list').on('click', function(e) {
+        e.preventDefault();
+        $('#nav-tabContent1').toggle();
+        commit();
+    });
+});
+
+$(function() {
+    $('#list-home-list').on('click', function(e) {
+        e.preventDefault();
+        $('#nav-tabContent1').toggle();
+        commit();
+    });
+});
+
+
+
