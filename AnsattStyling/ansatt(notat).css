@@ -106,6 +106,34 @@ h2 {
     cursor: text;
 }
 
+.list-group-item:active{
+    background-color: rebeccapurple;
+}
+
+
+.col-4 {
+    margin-left: 22%;
+    margin-top: 6%;
+}
+
+.col-8 {
+    margin-top: -10%;
+    margin-left: 55%;
+    position: relative;
+}
+
+.new {
+    background-color: #50297A;
+    color: white;
+}
+
+.new:hover {
+    color: white;
+    background-color: rebeccapurple;
+}
+
+
+
 /* -----------------------------------
     BOARD CONCEPT
 -------------------------------------*/
@@ -113,12 +141,12 @@ h2 {
 /*Boardprogress standard*/
 .boardProgress {
     float: left;
-    width: 500px;
-    min-height: 80vh;
+    width: 380px;
+    min-height: 0vh;
     padding: 10px;
-    margin: 2% 2% 0 0;
+    margin: 5% 2% 0 0;
     background-color: #ffffff;
-    margin-left: 25%;
+    margin-left: %;
 
 }
 
@@ -177,11 +205,11 @@ h4 {
 #addItem {
     color: white;
     background-color: #50297A;
-    width: 8%;
+    width: 20%;
     height: 40px;
     font-size: 15px;
     border-radius: 5px;
-    margin-left: 25%;
+    margin-left: 0%;
     margin-bottom: 10;
     margin-top: 10px;
     border: 0;

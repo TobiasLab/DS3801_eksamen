@@ -104,7 +104,9 @@ th {
 }
 
 #buttton_view {
-    background-color: dodgerblue;
+    background-color: #50297A;
+    color: white;
+    width: 80%;
 }
 
 .modal-body {
@@ -115,3 +117,4 @@ th {
     position: relative;
     text-align: center;
 }
+
