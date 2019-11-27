@@ -1,0 +1,32 @@
+body, html {
+    margin: 0;
+}
+
+#title {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 32px;
+    color: white;
+    font-weight: bolder;
+}
+
+#Appointment {
+    position: relative;
+    font-size: 16px;
+    color: black;
+    bottom: 100%;
+}
+
+#logo {
+    position: relative;
+    margin-left: 5px;
+    margin-top: 15px;
+    height: 30px;
+    width: auto;
+    top: 100;
+}
+
+#Set-Appointment-btn {
+    margin-top: 500px;
+    margin-left: 150px;
+}
