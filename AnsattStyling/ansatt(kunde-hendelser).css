@@ -93,6 +93,11 @@ th {
     
 }
 
+.table{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
 #nav-active {
     background-color: #50297A;
 }
@@ -135,5 +140,25 @@ th {
 
 #status-historikk_2 {
     color: orangered;
+}
+
+/*Table edit*/
+
+.table-striped.table-hover>tbody>tr:hover>td, 
+.table-striped.table-hover>tbody>tr:hover>th {
+  background-color: #efefef;
+}
+
+.table-header{
+    font-weight: bold;
+    color: #50297A;
+}
+
+.kunde{
+    font-weight: bold;
+    color: #50297A;
+}
+.kunde-bilde{
+    
 }
 

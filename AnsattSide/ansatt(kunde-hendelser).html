@@ -74,23 +74,22 @@
                         <a class="nav-link"href="/AnsattSide/ansatt(historikk).html">Historikk</a>
                     </li>
                 </ul>
-                <table class="table">
+                <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Type</th>
-                            <th scope="col">Dato</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Handling</th>
+                            <th scope="col" class="table-header">#</th>
+                            <th scope="col" class="table-header" colspan="2">Kunde</th>
+                            <th scope="col" class="table-header">Type</th>
+                            <th scope="col" class="table-header">Dato</th>
+                            <th scope="col" class="table-header">Status</th>
+                            <th scope="col" class="table-header">Handling</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
+                            <td>img</td>
+                            <td class="kunde">Mark Otto</td>
                             <td>Akupunktur</td>
                             <td>18.11.2019</td>
                             <td id="status">Aktiv</td>
@@ -119,8 +118,8 @@
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
+                            <td>img</td>
+                            <td class="kunde">Jacob Thornton</td>
                             <td>Osteopati</td>
                             <td>1.12.2019</td>
                             <td id="status-2">Venter på godkjenning</td>
@@ -142,16 +141,15 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </tr>
-                        <tr>
+                        <tr class='clickable-row' data-href='url://www.vg.no'>
                             <th scope="row">3</th>
-                            <td>David</td>
-                            <td>Laid</td>
+                            <td>img</td>
+                            <td class="kunde">David Laid</td>
                             <td>Kostholdveiledning</td>
                             <td>4.01.2020</td>
                             <td id="status">Aktiv</td>
@@ -173,7 +171,6 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>

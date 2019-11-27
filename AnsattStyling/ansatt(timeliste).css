@@ -130,14 +130,11 @@ a{
 
 /* required */
 .calendar{
-	position: absolute;
 	border-radius: 4px;
-	overflow: hidden;
 	width: 900px;
 	height: 450px;
-	left: 24%;
-	margin-top: -245px;
-	top: 50%;
+	left: 0%;
+	margin-top: 5px;
 	background-color: #ffffff;
 	color: #333333;
 }
@@ -272,15 +269,15 @@ a{
 }
 
 .calendar .days li a{
-	width: 36px;
-	height: 24px;
+	width: 25px;
+	height: 25px;
 	text-align: center;
 	margin: auto auto;
 	font-size: 12px;
 	font-weight: bold;
-	border-radius: 0px;
+	border-radius: 20px;
 	margin-bottom: 10px;
-	padding-top: 10px;
+	padding-top: 4px;
 }
 
 
@@ -294,39 +291,54 @@ a{
 }
 
 .calendar .days li .event{
-	color: lightgreen;
+	background-color: forestgreen;
+    color: white;
 }
 
 .calendar .days li .denied{
-	color: darkgray;
+	color:lightgray;
+}
+
+#cal_hele {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 45px;
 }
 
 #cal_ledig {
-    background-color: green;
-    margin-right:  82%;
+    background-color:forestgreen;
+     width: 12%;
     text-align: center;
-    font-size: 12px;
-    border-radius: 10px;
+    font-size: 10px;
+    border-radius: 3px;
     color: white;
+    float: inherit;
 }
 
 #cal_opptatt {
     background-color: darkgray;
-    margin-right:  82%;
+    width: 12%;
+    margin-left: 2px;
     text-align: center;
-    font-size: 12px;
-    border-radius: 10px;
+    font-size: 10px;
+    border-radius: 3px;
     color: white;
+    float: inherit;
 }
 
 #cal_jobb {
-    background-color: darkblue;
-    margin-right:  82%;
+    background-color: #50297A;
+    width: 12%;
+    margin-left: 2px;
     text-align: center;
-    font-size: 12px;
-    border-radius: 10px;
+    position: relative;
+    font-size: 10px;
+    border-radius: 3px;
     color: white;
+    float: inherit;
 }
+
 
 
 /* placeholder color */
