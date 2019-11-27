@@ -9,30 +9,36 @@
     margin: 0;
 }
 
+i {
+    
+}
+
 .buttons {
     position: absolute;
     height: 100%;
     width: 25%;
     display: flex;
     flex-direction: row;
+    font-size: 18px;
 }
 
 #button1 {
     left: 0;
-    background-color: red;
+    background-color: grey;
+    color: #50297A;
 }
 
 #button2 {
     left: 25%;
-    background-color: blue;
+    background-color: white;
 }
 
 #button3 {
     left: 50%;
-    background-color: green;
+    background-color: white;
 }
 
 #button4 {
     left: 75%;
-    background-color: yellow;
+    background-color: white;
 }
