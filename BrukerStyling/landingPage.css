@@ -4,7 +4,6 @@ body, html {
 
 #header {
     background-color: #50297A;
-    margin-bottom: 30px;
 }
 
 #title {
@@ -17,36 +16,13 @@ body, html {
 
 #Appointment {
     position: relative;
-    top: 20%;
-    margin-top: 30px;
-    margin-left: 15px;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     bottom: 100%;
 }
 
+#landingPage {
 
-#Set-Appointment-btn {
-    position: relative;
-    margin-left: 15px;
-    margin-top: -75px;
-    background-color: white;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-weight: bolder;
-
-}
-
-#Set-Appointment-btn:hover {
-    background-color: #50297A;
-    color: white;
 }
 
 #logo {
@@ -56,36 +32,4 @@ body, html {
     height: 30px;
     width: auto;
     top: 100;
-}
-
-#landingPage {
-    position: relative;
-    margin-top: 15px;
-}
-
-#options {
-    position: relative;
-    bottom: 20%;
-    color: grey;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    font-size: 16px;
-    font-weight: 50%;
-}
-
-.landingPage-btn {
-    position: relative;
-    margin-top: 10px;
-    left: 3%;
-    background-color: #50297A;
-    border: none;
-    color: white;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 13px;
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-weight: bolder;
 }
