@@ -180,6 +180,7 @@ a{
 .calendar .noteList li{
 	color: #ffffff;
 	margin-bottom: 10px;
+    margin-left: -19%
 }
 
 .calendar .notes p,
@@ -229,7 +230,7 @@ a{
 .calendar .rightCol h2{
 	color: #C7BEBE;
 	text-align: right;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 }
 
 .calendar .months li,
@@ -277,7 +278,7 @@ a{
 	margin: auto auto;
 	font-size: 12px;
 	font-weight: bold;
-	border-radius: 12px;
+	border-radius: 0px;
 	margin-bottom: 10px;
 	padding-top: 10px;
 }
@@ -288,12 +289,43 @@ a{
 }
 
 .calendar .days li .selected{
-	background-color: #F5A1A3!important;
+	background-color: #50297A!important;
 	color: #ffffff;
 }
 
 .calendar .days li .event{
-	color: #F5A1A3;
+	color: lightgreen;
+}
+
+.calendar .days li .denied{
+	color: darkgray;
+}
+
+#cal_ledig {
+    background-color: green;
+    margin-right:  82%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
+}
+
+#cal_opptatt {
+    background-color: darkgray;
+    margin-right:  82%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
+}
+
+#cal_jobb {
+    background-color: darkblue;
+    margin-right:  82%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
 }
 
 
