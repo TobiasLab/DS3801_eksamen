@@ -86,7 +86,6 @@ th {
     padding-top: 1.5%
 }
 
-
 #bg_title_3 {
     font-size: 25px;
     margin-top: 10%;
@@ -97,6 +96,12 @@ th {
 #nav-active {
     background-color: #50297A;
 }
+
+
+#nav-historikk {
+    background-color: #50297A;
+}
+
 
 .md-form {
     margin-left: 25%;
@@ -109,6 +114,12 @@ th {
     width: 80%;
 }
 
+#buttton_view:hover {
+    background-color: rebeccapurple;
+    color: white;
+    width: 80%;
+}
+
 .modal-body {
     position: relative;
 }
@@ -116,5 +127,13 @@ th {
 #modal-text{
     position: relative;
     text-align: center;
+}
+
+#status_historikk{
+    color: cornflowerblue;
+}
+
+#status-historikk_2 {
+    color: orangered;
 }
 

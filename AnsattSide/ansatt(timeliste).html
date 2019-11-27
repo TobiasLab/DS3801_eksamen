@@ -71,7 +71,7 @@
                         <a class="nav-link" href="/AnsattSide/ansatt(kunde-hendelser).html">Kunde-hendelser</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Historikk</a>
+                        <a class="nav-link" href="/AnsattSide/ansatt(historikk).html">Historikk</a>
                     </li>
                 </ul>
             </div>
@@ -122,7 +122,7 @@
                             <li><a href="#" title="Say" data-value="6">Sat</a></li>
                             <li><a href="#" title="Sun" data-value="7">Sun</a></li>
                         </ul>
-                    
+
                         <div class="clearfix"></div>
                         <ul class="days">
 
@@ -140,20 +140,26 @@
                                         case 27:
                                             _addClass = ' class="event"';
                                             break;
-                                    } 
-                                    
-                                     switch (_i) {
-                                            case 5:
-                                            case 12:
-                                            case 31:
-                                                _addClass = ' class="denied"';
+                                    }
+
+                                    switch (_i) {
+                                        case 5:
+                                        case 12:
+                                        case 31:
+                                            _addClass = ' class="denied"';
                                             break;
-                                        }
-                                       
+                                    }
+
 
                                     document.write('<li><a href="#" title="' + _i + '" data-value="' + _i + '"' + _addClass + '>' + _i + '</a></li>');
-
                                 }
+
+                                $(function() {
+                                    $('.selected').popover({
+                                        container: 'event'
+                                    })
+                                })
+
                             </script>
                         </ul>
                         <div class="clearfix"></div>
@@ -170,4 +176,6 @@
         <script src="/Pages/ansatt.js"></script>
 
     </div>
-</body></html>
+</body>
+
+</html>
