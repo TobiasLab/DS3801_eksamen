@@ -1,4 +1,35 @@
-body {
+body, html {
     margin: 0;
 }
 
+#header {
+    background-color: #50297A;
+}
+
+#title {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 32px;
+    color: white;
+    font-weight: bolder;
+}
+
+#Appointment {
+    position: relative;
+    font-size: 16px;
+    color: white;
+    bottom: 100%;
+}
+
+#landingPage {
+
+}
+
+#logo {
+    position: relative;
+    margin-left: 5px;
+    margin-top: 15px;
+    height: 30px;
+    width: auto;
+    top: 100;
+}
