@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    width: auto;
+    font-family: 'Lato', sans-serif;
+}
+#header {
+    background-color: #50297A;
+    margin-bottom: 30px;
+}
+#akuPage {
+    position: relative;
+    margin-top: 15px;
+}
+
+#logo {
+    position: relative;
+    margin-left: 5px;
+    margin-top: 15px;
+    height: 30px;
+    width: auto;
+    top: 100;
+}
+#title {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 32px;
+    color: white;
+    font-weight: bolder;
+}
+#akkupointment {
+    position: relative;
+    top: 20%;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+    bottom: 100%;
+
+}
+#textbox {
+    position: relative;
+    top: 20%;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 15px;
+    color: black;
+    bottom: 100%;
+}
+
+.akupunkt-btn {
+    position: relative;
+    margin-top: 10px;
+    left: 3%;
+    background-color: #50297A;
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-weight: bolder;
+}
