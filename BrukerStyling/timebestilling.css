@@ -25,3 +25,8 @@ h3 {
 .inputGroup {
     margin: 10px;
 }
+
+#maleFemaleButtons {
+    display: flex;
+    flex-direction: row;
+}
