@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 h1 {
@@ -32,7 +34,6 @@ h3 {
 }
 
 #log_in_button {
-    position: fixed;
     align-content: center;
     vertical-align: middle;
     width: 200px;
