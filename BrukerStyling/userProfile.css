@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+#profileMain {
+    padding-bottom: 30px;
+}
+
+#profileHeader {
+    position: relative;
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 15px;
+    background-color: #50297A;
+    border-radius: 10px;
+    color: white;
+}
+
+#profilePicture {
+    position: relative;
+    margin: 0;
+    bottom: -15px;
+    width: auto;
+    height: 45px;
+    border: 1px white;
+}
+
+#profileUsername {
+    position: relative;
+    width: 45px !important;
+    margin: 0;
+    font-family: 14px;
+    top: -15px;
+    left: 25%;
+    z-index: 10;
+}
+
+#profileEmail {
+    position: relative;
+    margin: 0;
+    font-size: 12px;
+    left: 20%;
+    bottom: 10px;
+}
+
+h2 {
+    position: relative;
+    left: 9%;
+    border-left: 3px solid #50297A;
+    padding: 10px;
+}
+
+p {
+    position: relative;
+    left: 9%;
+    font-size: 13px;
+    font-weight: 50%;
+    opacity: 70%;
+}
+
+button {
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 30px;
+    left: 9%;
+    font-size: 14px;
+    border-radius: 13px;
+    border: 1px solid #000000;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    background-color: #50297A;
+    color: white;
+}
