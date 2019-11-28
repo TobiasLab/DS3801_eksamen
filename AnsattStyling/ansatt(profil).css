@@ -1,174 +1,193 @@
-html,
-body {
-    height: 100%;
-    background-color: #f6f6f6;
-}
+  html,
+  body {
+      height: 100%;
+      background-color: #f6f6f6;
+  }
 
-.col-left {
-    background-color: #ffffff;
-    box-shadow: 10px grey;
-    height: 100%;
-    width: 20%;
-    position: fixed;
+  .col-left {
+      background-color: #ffffff;
+      box-shadow: 10px grey;
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      text-align: center;
+      padding-top: 10%
+  }
+
+  .bg_right {
+      background-color: #50297A;
+      height: 8%;
+      width: 100%;
+      position: fixed;
+  }
+
+  #bg_title {
+      font-size: 25px;
+      color: darkslateblue;
+      padding-top: 5%;
+  }
+
+  #profile {
+      width: 120px;
+      height: 120px; 
+  }
+
+  #profil-active {
+      font-weight:bolder;;
+  }
+
+
+  .nav-link{
+      color: black;
+  }
+
+  .navbar-nav {
+      text-align: center;
+      width: 100%;
+      
+  }
+
+  .nav-link:hover{
+      color: rebeccapurple;
+  }
+
+  #logo {
+      width: 5%; 
+      margin-left: -8%;
+  }
+
+
+  #bg_title_2 {
+      font-size: 25px;
+      color: white;
+      margin-left: 35%
+      
+  }
+
+  .object {
+      padding-top: 30%;
+      width: 50%;
+  }
+
+  .top {
+      width: 100%;
+      padding-top: 1.5%
+  }
+
+
+  #bg_title_3 {
+      font-size: 25px;
+      margin-top: 10%;
+      color: darkgrey;
+      
+  }
+
+  #box{
+      background-color: #ffffff;
+      box-shadow: 10px grey;
+      height: 100%;
+      width: 25%;
+      margin-top: -40%;
+      text-align: center;
+          
+  }
+
+  #box2{
+      background-color: #ffffff;
+      box-shadow: 10px grey;
+      width: 25%;
+      margin-top: -10%;
+      text-align: center;
+      margin-left: 50%;
+          
+  }
+
+  h5 {
+      margin-top: 5%;
+      padding-bottom: 10%;
+      font-size: 30px;
+
+  }
+
+  .container1{
+    margin: 190px auto;
+    background: white; 
+    color: #b3b8cd;
+    border-radius: 5px;
+    width: 400px;
     text-align: center;
-    padding-top: 10%
-}
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+  }
 
-.bg_right {
-    background-color: #50297A;
-    height: 8%;
+  .cover-photo{
+    background-image: url(/Bilder/Blurry.jpg);
+    height: 160px;
     width: 100%;
-    position: fixed;
-}
+    border-radius: 5px 5px 0 0;
+  }
 
-#bg_title {
-    font-size: 25px;
-    color: darkslateblue;
-    padding-top: 5%;
-}
-
-#profile {
+  .profile{
+    height: 120px;
     width: 120px;
-    height: 120px; 
-}
+    border-radius: 50%;
+    margin: 93px 0 0 -175px;
+    border: 1px solid #1f1a32;
+    padding: 7px;
+    background: white;
+  }
 
-#profil-active {
-    font-weight:bolder;;
-}
-
-
-.nav-link{
-    color: black;
-}
-
-.navbar-nav {
-    text-align: center;
-    width: 100%;
-    
-}
-
-.nav-link:hover{
-    color: rebeccapurple;
-}
-
-#logo {
-    width: 5%; 
-    margin-left: -8%;
-}
-
-
-#bg_title_2 {
+  .profile-name{
     font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 0 120px;
+  }
+
+    .about{
+    margin-bottom: 70px;
+    left: 10px;
+    color: grey;
+    margin-right: -100px;
+  }
+
+  .about1{
+    margin-top: -65px;
+    margin-left: -150px;
+    color: grey;
+  } 
+
+  .about2{
+    margin-top: -15px;
+    margin-left: -320px;
+    color: grey;
+  }
+
+  .about3{
+    margin-top: -15px;
+    margin-left: -255px;
+    color: grey;
+  }
+
+  button{
+    margin: 40px 0 40px 0;
+  }
+
+  .save-btn {
+    background: white;
+    border: 1px solid white;
+    padding: 10px 25px;
+    color: #231e39;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .save-btn{
+    margin-left: 10px;
+    background: transparent;
     color: white;
-    margin-left: 35%
-    
-}
+  }
 
-.object {
-    padding-top: 30%;
-    width: 50%;
-}
-
-.top {
-    width: 100%;
-    padding-top: 1.5%
-}
-
-
-#bg_title_3 {
-    font-size: 25px;
-    margin-top: 10%;
-    color: darkgrey;
-    
-}
-
-#box{
-    background-color: #ffffff;
-    box-shadow: 10px grey;
-    height: 100%;
-    width: 25%;
-    margin-top: -40%;
-    text-align: center;
-        
-}
-
-#box2{
-    background-color: #ffffff;
-    box-shadow: 10px grey;
-    width: 25%;
-    margin-top: -10%;
-    text-align: center;
-    margin-left: 50%;
-        
-}
-
-h5 {
-    margin-top: 5%;
-    padding-bottom: 10%;
-    font-size: 30px;
-
-}
-
-.container1{
-  margin: 190px auto;
-  background: #50297A;
-  color: #b3b8cd;
-  border-radius: 5px;
-  width: 400px;
-  text-align: center;
-  box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
-}
-
-.cover-photo{
-  background: white;
-  height: 160px;
-  width: 100%;
-  border-radius: 5px 5px 0 0;
-}
-
-.profile{
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  margin: 93px 0 0 -175px;
-  border: 1px solid #1f1a32;
-  padding: 7px;
-  background: #292343;
-}
-
-.profile-name{
-  font-size: 25px;
-  font-weight: bold;
-  margin: 10px 0 0 120px;
-}
-
-.about{
-  margin-top: 15px;
-  line-height: 40px;
-  left: 150px;
-}
-
-button{
-  margin: 40px 0 40px 0;
-}
-
-.save-btn {
-  background: white;
-  border: 1px solid white;
-  padding: 10px 25px;
-  color: #231e39;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.save-btn{
-  margin-left: 10px;
-  background: transparent;
-  color: white;
-}
-
-.save-btn:hover{
-  color: #231e39;
-  background: white;
-  transition: .5s;
-}
+  .save-btn:hover{
+    color: #231e39;
+    background: white;
+    transition: .5s;
+  }
