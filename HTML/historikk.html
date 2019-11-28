@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
     <script src="/Pages/historikk.js"></script>
-    <link rel="stylesheet" type="text/css" href="/BrukerStyling/timebestilling.css">
+    <link rel="stylesheet" type="text/css" href="/BrukerStyling/historikk.css">
     <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
 </head>
 
@@ -11,9 +11,28 @@
     <div id="aktivHistorikk" class="topDiv">
         <h1>Avtaler</h1>
     </div>
+
     <div id="bestillinger">
-        
+        <a class="dag">I dag</a>
+        <div id="akupunktur" class="bestillingContainer">
+            <div id="akupunkturBestilling" class="bestillingBox">
+                <a class="behandling">Akupunktur</a>
+                <a id="tid">Kl 08:30</a>
+            </div>
+        </div>
+
+        <div id="osteopati" class="bestillingContainer">
+            <a class="dag">Lørdag</a>
+            <div id="osteopatiBestilling" class="bestillingBox">
+                    <a class="behandling">Osteopati</a>
+                    <a id="tid">Kl 12:15</a>
+                </div>
+            </div>
     </div>
+
+    <!--Notat: Lag boksene slik at de ikke ser dumme ut
+    Når man trykker på divven, blir en annen div display:block. Der kan man også trykke på avbestill,
+    som gjør divven til display:none, og åpne divven til display:none. Samme for begge boksene.-->
 
     <div id="navbarId" class="navbar">
             <ul id="navbar-list">
