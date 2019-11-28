@@ -4,8 +4,12 @@ body {
     width: 100%;
 }
 
+html {
+    margin: 0;
+}
+
 h1 {
-    margin: 25px;
+    margin-left: 25px;
 }
 
 h2 {
@@ -54,4 +58,65 @@ h2 {
 
 #aktive {
     border-bottom: 3px solid #50297A;
+}
+
+#avbestilling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#avbestillingBox {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    width: 90%;
+    z-index: 2;
+    background-color: white;
+}
+
+#avbestillingTop {
+    font-size: 25px;
+}
+
+.avbestillingInnhold {
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 11px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+#rettigheter2 {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#rettigheter1 {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+#log_in_button {
+    margin: 15px;
+    align-content: center;
+    vertical-align: middle;
+    width: 150px;
+    background-color: #50297A;
+    border-radius: 7px;
+    border: 0;
+    font-size: 13px;
+    height: 35px;
+
+    text-align: center;
+    font-size: 90%;
+    color: white;
+    font-weight: 200
 }
