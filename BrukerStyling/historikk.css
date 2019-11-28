@@ -8,6 +8,10 @@ h1 {
     margin: 25px;
 }
 
+h2 {
+    margin: 10px;
+}
+
 .bestillingContainer {
     position: relative;
     width: 100%;
@@ -39,4 +43,14 @@ h1 {
 #tid {
     position: relative;
     font-size: 12px;
+}
+
+.aktiveHistorikk {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+#aktive {
+    border-bottom: 3px solid #50297A;
 }
