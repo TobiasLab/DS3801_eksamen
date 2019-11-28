@@ -31,6 +31,29 @@
         </div>
     </div>
 
+    <div id="avbestilling2" class="bottomDiv2">
+            <div id="avbestillingBox">
+                <h1 id="avbestillingTop" class="avbestillingInnhold">Aktiv: Osteopati</h1>
+                <a class="avbestillingInnhold">Tid: kl 12:15</a>
+                <a class="avbestillingInnhold">Adresse: Prinsens gate 9, 0153 Oslo.</a>
+                <a class="avbestillingInnhold">Pris: 300,- / rabatt* 150,-</a>
+                <a class="avbestillingInnhold">Dine rettigheter som pasient</a>
+                <a id="rettigheter1" class="avbestillingInnhold">
+                    Vi forholder oss til en rekke lover og regler som ivarentar dine pasientrettigheter.
+                    Våre studenter må rsamtykke til å følgee dette lovverketfør de starter sin kliniske
+                    praksisperiode.
+                </a>
+                <a id="rettigheter2" class="avbestillingInnhold">
+                    Under følger en oversikt over de mest relevante bestemmelsene for deg som
+                    pasient ved Studentklinikken tilhørende Institutt for Helsevitsenskap.
+                </a>
+    
+                <button class="btn btn-info" id="log_in_button" role="button">
+                        Avbestill time
+                </button>
+            </div>
+        </div>
+
     <div id="aktivOgHistorikk" class="topDiv">
         <h1>Avtaler</h1>
         <div class="aktiveHistorikk">
@@ -42,7 +65,7 @@
     <div id="bestillinger">
         <a class="dag">I dag</a>
         <div id="akupunktur" class="bestillingContainer">
-            <div id="akupunkturBestilling" class="bestillingBox">
+            <div id="akupunkturBestilling" class="bestillingBox"  onclick="showAkupunktur()">
                 <a class="behandling">Akupunktur</a>
                 <a id="tid">Kl 08:30</a>
             </div>
@@ -50,7 +73,7 @@
 
         <div id="osteopati" class="bestillingContainer">
             <a class="dag">Lørdag</a>
-            <div id="osteopatiBestilling" class="bestillingBox">
+            <div id="osteopatiBestilling" class="bestillingBox" onclick="showOsteopati()">
                     <a class="behandling">Osteopati</a>
                     <a id="tid">Kl 12:15</a>
                 </div>
