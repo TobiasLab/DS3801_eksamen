@@ -41,6 +41,7 @@ h2 {
 }
 
 #tid {
+    top: 30%;
     position: relative;
     font-size: 12px;
 }
