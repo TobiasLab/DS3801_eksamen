@@ -11,7 +11,8 @@ body {
     width: 20%;
     position: fixed;
     text-align: center;
-    padding-top: 10%
+    padding-top: 10%;
+    font-family: 'Alata', sans-serif;
 }
 
 .bg_right {
@@ -25,34 +26,49 @@ body {
     font-size: 25px;
     color: darkslateblue;
     padding-top: 5%;
+    font-family: 'Alata', sans-serif;
 }
 
 #profile {
     width: 120px;
-    height: 120px; 
+    height: 50%;
 }
 
-
-#time-active{
-    font-weight:bolder;
+@media only screen and (max-width: 1000px) {
+    #profile {
+        width: 100px;
+        height: 50%;
+    }
 }
 
-.nav-link{
+#hk-logo {
+    width: 5%;
+    margin-left: 28%;
+    margin-top: -7.5%;
+}
+
+#time-active {
+    font-weight: bolder;
+}
+
+.nav-link {
     color: black;
+    font-family: 'Alata', sans-serif;
 }
 
 .navbar-nav {
     text-align: center;
     width: 100%;
-    
+    font-family: 'Alata', sans-serif;
+
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rebeccapurple;
 }
 
 #logo {
-    width: 5%; 
+    width: 5%;
     margin-left: -8%;
 }
 
@@ -60,16 +76,18 @@ body {
 #bg_title_2 {
     font-size: 25px;
     color: white;
-    margin-left: 35%
-    
+    margin-left: 35%;
+    font-family: 'Alata', sans-serif;
+
 }
 
 .object {
     padding-top: 10%;
     width: 77.5%;
     margin-left: 22.5%;
-    
+
 }
+
 th {
     font-weight: 400;
 }
@@ -91,12 +109,13 @@ th {
     font-size: 25px;
     margin-top: 10%;
     color: darkgrey;
-    
+
 }
 
-.table{
+.table {
     margin-top: 15px;
     font-size: 14px;
+    font-family: 'Alata', sans-serif;
 }
 
 #nav-active {
@@ -130,12 +149,12 @@ th {
     position: relative;
 }
 
-#modal-text{
+#modal-text {
     position: relative;
     text-align: center;
 }
 
-#status_historikk{
+#status_historikk {
     color: cornflowerblue;
 }
 
@@ -145,22 +164,23 @@ th {
 
 /*Table edit*/
 
-.table-striped.table-hover>tbody>tr:hover>td, 
-.table-striped.table-hover>tbody>tr:hover>th {
-  background-color: #efefef;
+.table-striped.table-hover > tbody > tr:hover > td,
+.table-striped.table-hover > tbody > tr:hover > th {
+    background-color: #efefef;
 }
 
-.table-header{
+.table-header {
     font-weight: bold;
     color: #50297A;
 }
 
-.kunde{
+.kunde {
     font-weight: bold;
     color: #50297A;
 
 }
-.kunde-bilde{
+
+.kunde-bilde {
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -168,6 +188,6 @@ th {
     padding: 0;
 }
 
-.clickable-row{
+.clickable-row {
     cursor: pointer;
 }

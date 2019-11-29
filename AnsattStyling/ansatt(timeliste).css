@@ -11,7 +11,8 @@ body {
     width: 20%;
     position: fixed;
     text-align: center;
-    padding-top: 10%
+    padding-top: 10%;
+    font-family: 'Alata', sans-serif;
 }
 
 .bg_right {
@@ -19,6 +20,7 @@ body {
     height: 8%;
     width: 100%;
     position: fixed;
+    font-family: 'Alata', sans-serif;
 }
 
 #bg_title {
@@ -32,6 +34,12 @@ body {
     height: 50%;
 }
 
+@media only screen and (max-width: 1000px) {
+    #profile {
+        width: 100px;
+        height: 50%;
+    }
+}
 
 #time-active {
     font-weight: bolder;
@@ -63,11 +71,17 @@ body {
     margin-left: 35%
 }
 
+#hk-logo{
+    width: 5%;
+    margin-left: 28%;
+    margin-top: -7.5%;
+}
+
 .object {
     padding-top: 10%;
     width: 77.5%;
     margin-left: 22.5%;
-
+    font-family: 'Alata', sans-serif;
 }
 
 .top {
@@ -80,7 +94,6 @@ body {
     font-size: 25px;
     margin-top: 10%;
     color: darkgrey;
-
 }
 
 #nav-active {
@@ -195,7 +208,7 @@ a {
 .calendar .noteList li {
     color: #ffffff;
     margin-bottom: 10px;
-    margin-left: -40px;
+    margin-left: -25px;
 }
 
 .calendar .notes p,

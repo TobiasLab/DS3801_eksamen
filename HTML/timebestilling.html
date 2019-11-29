@@ -8,86 +8,102 @@
     <link rel="stylesheet" type="text/css" href="/BrukerStyling/landingPage.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
     <div id="TimebestillingHead">
         <header id="header">
             <img src="/Bilder/HK_Logo_icon_2.png" id="logo">
             <h1 id="title">Timebestilling</h1>
         </header>
-            <div id="Appointment-block">
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
-                        <script src="/Pages/timebestilling.js"></script>
-                        <link rel="stylesheet" type="text/css" href="/BrukerStyling/timebestilling.css">
-                        <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
-                    </head>
-                    
-                    <body>
-                        
-                        <!--Timebestilling page-->
-                        
-                        <div id="page1" class="timebestilling">
-                            
-                            <div class="inputGroup" id="inputGroup1">
-                                <h3>Fornavn</h3>
-                                <input type="text" id="fornavnInput">
-                            </div>
-                    
-                            <div class="inputGroup" id="inputGroup2">
-                                    <h3>Etternavn</h3>
-                                    <input type="text" id="etternavnInput">
-                            </div>
-                    
-                            <div class="inputGroup" id="inputGroup3">
-                                    <h3>Hvilken behandling vil du ha?</h3>
-                                    <select>
-                                        <option value="akupunktur">Akupunktur</option>
-                                        <option value="osteopati">Osteopati</option>
-                                        <option value="kostholdveiledning">Kostholdveiledning</option>
-                                        <option value="fysiologisk_testlab">Fysiologisk testlab</option>
-                                    </select>
-                            </div>
-                    
-                            <div class="inputGroup" id="inputGroup4">
-                                <form>
-                                    <h3>Tid</h3>
-                                    <input type="date" name="appointmentDate">
-                                </form>
-                            </div>
-                    
-                            <div class="inputGroup" id="inputGroup5">
-                                <h3>Kjønn</h3>
-                                <div id="maleFemaleButtons">
-                                    <button id="male">Male</button>
-                                    <button id="female">Female</button>
-                                </div>
-                            </div>
-                    
-                            <div class="inputGroup" id="inputGroup6">
-                                <h3>Noe vi burde vite?</h3>
-                                <textarea rows="5" cols="43">
-                    
+        <div id="Appointment-block">
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+                <script src="/Pages/timebestilling.js"></script>
+                <link rel="stylesheet" type="text/css" href="/BrukerStyling/timebestilling.css">
+                <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
+            </head>
+
+            <body>
+
+                <!--Timebestilling page-->
+
+                <div id="page1" class="timebestilling">
+
+                    <div class="inputGroup" id="inputGroup1">
+                        <h3>Fornavn</h3>
+                        <input type="text" id="fornavnInput">
+                    </div>
+
+                    <div class="inputGroup" id="inputGroup2">
+                        <h3>Etternavn</h3>
+                        <input type="text" id="etternavnInput">
+                    </div>
+
+                    <div class="inputGroup" id="inputGroup3">
+                        <h3>Hvilken behandling vil du ha?</h3>
+                        <select>
+                            <option value="akupunktur">Akupunktur</option>
+                            <option value="osteopati">Osteopati</option>
+                            <option value="kostholdveiledning">Kostholdveiledning</option>
+                            <option value="fysiologisk_testlab">Fysiologisk testlab</option>
+                        </select>
+                    </div>
+
+                    <div class="inputGroup" id="inputGroup4">
+                        <form>
+                            <h3>Tid</h3>
+                            <input type="date" name="appointmentDate">
+                        </form>
+                    </div>
+
+                    <div class="inputGroup" id="inputGroup5">
+                        <h3>Kjønn</h3>
+                        <div id="maleFemaleButtons">
+                            <button id="male">Male</button>
+                            <button id="female">Female</button>
+                        </div>
+                    </div>
+
+                    <div class="inputGroup" id="inputGroup6">
+                        <h3>Noe vi burde vite?</h3>
+                        <textarea rows="5" cols="43">
+
                                 </textarea>
-                            </div>
-                    
-                            <button class="btn btn-info" id="log_in_button" role="button">
-                                Bestill time
-                            </button>
-                        </div>
-                        
-                        <div id="navbarId" class="navbar">
-                            <ul id="navbar-list">
-                                <li class="navbtn" id="navbar-btn1" ><a href="#landingPage">Hjem</a></li>
-                                <li class="navbtn" id="navbar-btn2" ><a href="timebestilling.html">Timebestilling</a></li>
-                                <li class="navbtn" id="navbar-btn3" ><a href="">Avtaler</a></li>
-                                <li class="navbtn" id="navbar-btn4" ><a href="">Profil</a></li>
-                            </ul>
-                        </div>
-                    </body>
-                    
-                    </html>
+                    </div>
+
+                    <button class="btn btn-info" id="log_in_button" role="button">
+                        Bestill time
+                    </button>
+                </div>
+
+                <nav class="navbar">
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+
+                                <a class="nav-link" href="#"><i class="fas fa-home"></i> <br> Hjem <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i> <br>Timebestilling</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <i class="fas fa-calendar-check"></i> <br>Avtaler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> <i class="fas fa-user"></i> <br> Profil</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </body></html>
             </div>
         </div>

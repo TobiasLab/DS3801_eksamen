@@ -8,13 +8,17 @@ h1 {
     font-size: 250%;
     color: white;
     font-weight: 200;
-    font-family: 'Lato', sans-serif;
+     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-/* h2 {} */
+h2 {
+    font-family: 'Alata', sans-serif;
+}
 
 h4 {
     font-size: 12px;
+    font-family: 'Alata', sans-serif;
+    
 }
 
 .col_left {
@@ -30,6 +34,7 @@ h4 {
 #col_left_h2 {
     color: white;
     font-size: 25px;
+    font-family: 'Alata', sans-serif;
 }
 
 #logo_img {
@@ -46,10 +51,12 @@ h4 {
     width: 50%;
     left: 50%;
     text-align: center;
+    font-family: 'Alata', sans-serif;
 }
 
 .container {
     width: 50%;
+    
 }
 
 @media only screen and (max-width: 1250px) {
@@ -68,9 +75,11 @@ h4 {
     border: 0;
     font-size: 13px;
     height: 35px;
+    font-family: 'Alata', sans-serif;
 }
 
 
 .input-group {
     margin-bottom: 10px;
+    
 }

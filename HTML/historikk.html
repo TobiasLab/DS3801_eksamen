@@ -5,6 +5,10 @@
     <script src="/Pages/historikk.js"></script>
     <link rel="stylesheet" type="text/css" href="/BrukerStyling/historikk.css">
     <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -86,14 +90,26 @@
     Når man trykker på divven, blir en annen div display:block. Der kan man også trykke på avbestill,
     som gjør divven til display:none, og åpne divven til display:none. Samme for begge boksene.-->
 
-    <div id="navbarId" class="navbar">
-            <ul id="navbar-list">
-                <li class="navbtn" id="navbar-btn1" ><a href="#landingPage">Hjem</a></li>
-                <li class="navbtn" id="navbar-btn2" ><a href="timebestilling.html">Timebestilling</a></li>
-                <li class="navbtn" id="navbar-btn3" ><a href="">Avtaler</a></li>
-                <li class="navbtn" id="navbar-btn4" ><a href="">Profil</a></li>
+ <nav class="navbar">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i> <br> Hjem <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i> <br>Timebestilling</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="fas fa-calendar-check"></i> <br>Avtaler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="fas fa-user"></i> <br> Profil</a>
+                </li>
             </ul>
-    </div>
+        </div>
+    </nav>
 </body>
 
 </html>

@@ -11,7 +11,8 @@
       width: 20%;
       position: fixed;
       text-align: center;
-      padding-top: 10%
+      padding-top: 10%;
+      font-family: 'Alata', sans-serif;
   }
 
   .bg_right {
@@ -20,18 +21,33 @@
     height: 8%;
     width: 100%;
     position: fixed;
+      font-family: 'Alata', sans-serif;
 }
 
   #bg_title {
       font-size: 25px;
       color: rgb(55, 51, 82);
       padding-top: 5%;
+      font-family: 'Alata', sans-serif;
   }
 
-  #profile {
-      width: 120px;
-      height: 120px; 
-  }
+#profile {
+    width: 120px;
+    height: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #profile {
+        width: 100px;
+        height: 50%;
+    }
+}
+
+#hk-logo{
+    width: 5%;
+    margin-left: 28%;
+    margin-top: -7.5%;
+}
 
   #time-active{
     font-weight:bolder;
@@ -102,7 +118,7 @@ padding: 10%;
 margin-top: 3%;
 margin-bottom: 3%;
 border-radius: 0.5rem;
-background: #fff;
+
 }
 
 .profile-img{

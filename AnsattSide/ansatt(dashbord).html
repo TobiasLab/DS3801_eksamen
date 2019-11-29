@@ -9,6 +9,12 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/AnsattStyling/ansatt(dashbord).css">
+    
+     <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet"> 
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -55,6 +61,7 @@
         <div class="bg_right">
             <div class="container top">
                 <h1 id="bg_title_2">Studentklinikken | Ansatt</h1>
+                <img src="/Bilder/HK_Logo_icon_2.png" id="hk-logo" class="rounded-circle" alt="Cinque Terre">
             </div>
         </div>
 
@@ -72,54 +79,116 @@
                         1 day ago
                     </div>
                 </div>
-                <h1 id="bg_title_3">Oversikt: timeliste</h1>
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Type</th>
-                            <th scope="col">Dato</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Handling</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Akupunktur</td>
-                            <td>18.11.2019</td>
-                            <td>Aktiv</td>
-                            <td>View</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>Osteopati</td>
-                            <td>1.12.2019</td>
-                            <td>Venter på godkjenning</td>
-                            <td>View</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>David</td>
-                            <td>Laid</td>
-                            <td>Kostholdveiledning</td>
-                            <td>4.01.2020</td>
-                            <td>Aktiv</td>
-                            <td>View</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="box">
+                    <div class="container tabel">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="table-header">#</th>
+                                    <th scope="col" class="table-header" colspan="2">Kunde</th>
+                                    <th scope="col" class="table-header">Type</th>
+                                    <th scope="col" class="table-header">Dato</th>
+                                    <th scope="col" class="table-header">Status</th>
+                                    <th scope="col" class="table-header">Handling</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class='clickable-row' data-toggle="modal" data-target="#exampleModal">
+                                    <th scope="row">1</th>
+                                    <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
+                                    <td class="kunde">Mark Otto</td>
+                                    <td>Akupunktur</td>
+                                    <td>18.11.2019</td>
+                                    <td id="status">Aktiv</td>
+                                    <td><button type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-check-circle"></i> Fullfør</button></td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Kunde</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="/Bilder/Afeeva_M_BW_IndMem.jpg" class="img-fluid" alt="Responsive image">
+                                                    <h2 id="modal-text">Mark Otto</h2>
+                                                    <p id="modal-text">Vært medlem for studentklinikken siden 2016.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr class='clickable-row' data-toggle="modal" data-target="#exampleModal2">
+                                    <th scope="row">2</th>
+                                    <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
+                                    <td class="kunde">Jacob Thornton</td>
+                                    <td>Osteopati</td>
+                                    <td>01.12.2019</td>
+                                    <td id="status-2">Venter på godkjenning</td>
+                                    <td><button type="button" class="btn btn-outline-primary btn-sm"> Godkjenn</button></td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="/Bilder/author-jack-nicas-videoSixteenByNineJumbo1600.png" class="img-fluid" alt="Responsive image">
+                                                    <h2 id="modal-text">Jacob Thornton</h2>
+                                                    <p id="modal-text">Vært medlem for studentklinikken siden 2018.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                                <tr class='clickable-row' data-toggle="modal" data-target="#exampleModal3">
+                                    <th scope="row">3</th>
+                                    <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
+                                    <td class="kunde">David Laid</td>
+                                    <td>Kostholdveiledning</td>
+                                    <td>04.01.2020</td>
+                                    <td id="status">Aktiv</td>
+                                    <td><button type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-check-circle"></i> Fullfør</button></td>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="/Bilder/1543415235-david-1.jpg" class="img-fluid" alt="Responsive image">
+                                                    <h2 id="modal-text">David Laid</h2>
+                                                    <p id="modal-text">Vært medlem for studentklinikken siden 2014.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <script src="Pages/ansatt.js"></script>
+
             </div>
-        </div>
-
-
-        <script src="Pages/ansatt.js"></script>
-
-    </div>
 </body></html>

@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/AnsattStyling/ansatt(kunder).css">
+    
+     <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -31,7 +33,7 @@
         <!--Left side background  -->
         <div class="col-left">
             <div class="container menu">
-                <img src="/Bilder/eqwjk03002_hertruckerjkt,l_grt0_frt1.jpg" id="profile" class="rounded-circle" alt="Cinque Terre">
+                <img src="/Bilder/helene.hansen.lian_-595x530.jpg" id="profile" class="rounded-circle" alt="Cinque Terre">
                 <h1 id="bg_title">Helene. K</h1>
                 <!-- A vertical navbar -->
                 <nav class="navbar">
@@ -61,6 +63,8 @@
         <div class="bg_right">
             <div class="container top">
                 <h1 id="bg_title_2">Studentklinikken | Ansatt</h1>
+                <img src="/Bilder/HK_Logo_icon_2.png" id="hk-logo" class="rounded-circle" alt="Cinque Terre">
+
             </div>
         </div>
 
@@ -263,99 +267,100 @@
                                     </div> View
                                 </a>
                             </div>
-                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><div class="tab-pane" id="david" role="tabpanel">
-                            <div class="card" style="width: 26rem;">
-                                <img src="/Bilder/1543415235-david-1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">David Laid</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                <div class="tab-pane" id="david" role="tabpanel">
+                                    <div class="card" style="width: 26rem;">
+                                        <img src="/Bilder/1543415235-david-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">David Laid</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
-                                    <div class="line"></div>
-                                    <div id="board">
-                                        <div><button id="addItem">New</button></div>
+                                            <div class="line"></div>
+                                            <div id="board">
+                                                <div><button id="addItem">New</button></div>
 
-                                        <div id="todo" class="boardProgress">
-                                            <h4 id="boardTodo">Customer note</h4>
-                                            <p></p>
-                                            <div class="dragItems">
-                                                <i class="far fa-trash-alt" onclick="deleteFunction(this)"></i>
-                                                <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
-                                                <h6 id="taskNameItem">Prototype evaluation</h6>
-                                                <span id="taskTagItem" class="badge-outline">Tag</span>
-                                                <p id="taskDescItem">- Description<br>- Description</p>
-                                                <p class="deadline" id="taskDateItem">07.06.2019</p>
+                                                <div id="todo" class="boardProgress">
+                                                    <h4 id="boardTodo">Customer note</h4>
+                                                    <p></p>
+                                                    <div class="dragItems">
+                                                        <i class="far fa-trash-alt" onclick="deleteFunction(this)"></i>
+                                                        <i class="far fa-edit" data-toggle="modal" data-target="#exampleModal"></i>
+                                                        <h6 id="taskNameItem">Prototype evaluation</h6>
+                                                        <span id="taskTagItem" class="badge-outline">Tag</span>
+                                                        <p id="taskDescItem">- Description<br>- Description</p>
+                                                        <p class="deadline" id="taskDateItem">07.06.2019</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <!-- Popup Modal for content edit-->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Edit note</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <label for="recipient-name" class="col-form-label">Task:</label>
+                                                                <input type="text" class="form-control" id="taskName">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="message-text" class="col-form-label">Description:</label>
+                                                                <textarea class="form-control" id="taskDescription"></textarea>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="recipient-name" class="col-form-label">Tag:</label>
+                                                                <input type="text" class="form-control" id="taskTag">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="recipient-name" class="col-form-label">Assign to:</label>
+                                                                <input type="text" class="form-control" id="taskUser">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="recipient-name" class="col-form-label">Deadline:</label>
+                                                                <input type="text" class="form-control" id="taskDate">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveForm()">Update</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="" class="btn btn new" button type="button" data-toggle="modal" data-target="#exampleModal3">
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <img src="/Bilder/author-jack-nicas-videoSixteenByNineJumbo1600.png" class="img-fluid" alt="Responsive image">
+                                                            <h2 id="modal-text">Jacob Thornton</h2>
+                                                            <p id="modal-text">Vært medlem for studentklinikken siden 2016.</p>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> View
+                                        </a>
                                     </div>
                                 </div>
-                                <!-- Popup Modal for content edit-->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Edit note</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">Task:</label>
-                                                        <input type="text" class="form-control" id="taskName">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="message-text" class="col-form-label">Description:</label>
-                                                        <textarea class="form-control" id="taskDescription"></textarea>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">Tag:</label>
-                                                        <input type="text" class="form-control" id="taskTag">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">Assign to:</label>
-                                                        <input type="text" class="form-control" id="taskUser">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">Deadline:</label>
-                                                        <input type="text" class="form-control" id="taskDate">
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="saveForm()">Update</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="" class="btn btn new" button type="button" data-toggle="modal" data-target="#exampleModal3">
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <img src="/Bilder/author-jack-nicas-videoSixteenByNineJumbo1600.png" class="img-fluid" alt="Responsive image">
-                                                    <h2 id="modal-text">Jacob Thornton</h2>
-                                                    <p id="modal-text">Vært medlem for studentklinikken siden 2016.</p>
-
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> View
-                                </a>
-                            </div>
-                            </div>
                             </div>
                             <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
                         </div>
@@ -376,6 +381,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 
-</body>
-
-</html>
+</body></html>

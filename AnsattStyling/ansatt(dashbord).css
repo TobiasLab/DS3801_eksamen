@@ -19,17 +19,25 @@ body {
     height: 8%;
     width: 100%;
     position: fixed;
+    font-family: 'Alata', sans-serif;
 }
 
 #bg_title {
     font-size: 25px;
     color: darkslateblue;
     padding-top: 5%;
+    font-family: 'Alata', sans-serif;
 }
 
 #profile {
     width: 120px;
     height: 50%;
+}
+
+#hk-logo{
+    width: 5%;
+    margin-left: 28%;
+    margin-top: -7.5%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -46,6 +54,7 @@ body {
 
 .nav-link {
     color: black;
+    font-family: 'Alata', sans-serif;
 }
 
 .navbar-nav {
@@ -58,11 +67,6 @@ body {
     color: rebeccapurple;
 }
 
-#logo {
-    width: 5%;
-    margin-left: -8%;
-}
-
 
 #bg_title_2 {
     font-size: 25px;
@@ -73,6 +77,12 @@ body {
 .object {
     padding-top: 10%;
     width: 55%;
+    margin-left: 20.5%;
+    font-family: 'Alata', sans-serif;
+}
+
+.tabel {
+    padding-top: 8%;
 }
 
 .top {
@@ -85,7 +95,6 @@ body {
     font-size: 25px;
     margin-top: 10%;
     color: darkgrey;
-
 }
 
 #box {
@@ -106,11 +115,13 @@ h5 {
     margin-left: 5%;
     font-weight: bold;
     color: #50297A;
+    font-family: 'Alata', sans-serif;
 }
 
 .card-title {
     margin-top: -0.5%;
-    margin-bottom: -8%
+    margin-bottom: -8%;
+    font-family: 'Alata', sans-serif;
 }
 
 .card-header {
@@ -118,3 +129,106 @@ h5 {
     color: #50297A;
 
 }
+
+th {
+    font-weight: 400;
+}
+
+#status {
+    color: limegreen;
+}
+
+#status-2 {
+    color: royalblue
+}
+
+.top {
+    width: 100%;
+    padding-top: 1.5%
+}
+
+#bg_title_3 {
+    font-size: 25px;
+    margin-top: 10%;
+    color: darkgrey;
+    
+}
+
+.table{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#nav-active {
+    background-color: #50297A;
+}
+
+
+#nav-historikk {
+    background-color: #50297A;
+}
+
+
+.md-form {
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+#buttton_view {
+    background-color: #50297A;
+    color: white;
+    width: 80%;
+}
+
+#buttton_view:hover {
+    background-color: rebeccapurple;
+    color: white;
+    width: 80%;
+}
+
+.modal-body {
+    position: relative;
+}
+
+#modal-text{
+    position: relative;
+    text-align: center;
+}
+
+#status_historikk{
+    color: cornflowerblue;
+}
+
+#status-historikk_2 {
+    color: orangered;
+}
+
+/*Table edit*/
+
+.table-striped.table-hover>tbody>tr:hover>td, 
+.table-striped.table-hover>tbody>tr:hover>th {
+  background-color: #efefef;
+}
+
+.table-header{
+    font-weight: bold;
+    color: #50297A;
+}
+
+.kunde{
+    font-weight: bold;
+    color: #50297A;
+
+}
+.kunde-bilde{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.clickable-row{
+    cursor: pointer;
+}
+
