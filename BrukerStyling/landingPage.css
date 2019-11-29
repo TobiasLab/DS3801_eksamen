@@ -33,12 +33,14 @@ html {
 
 #Set-Appointment-btn {
     position: relative;
-    width: 100%;
+    width: 80%;
     margin-bottom: -25%;
+    margin-left: 10%;
+    padding-left: 15px;
     background-color: white;
     border: none;
-    color: black;
-    padding: 18px 132px;
+    color: #50297A;
+    height: 50px;
     text-align: left;
     text-decoration: none;
     display: inline-block;
@@ -48,12 +50,7 @@ html {
     -moz-box-shadow: 0px 18px 10px -7px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 18px 10px -7px rgba(0, 0, 0, 0.1);
     font-family: 'Alata', sans-serif;
-}
-
-@media only screen and (max-width: 414px) {
-  #Set-Appointment-btn {
-    font-size: 12px;
-  }
+    cursor: pointer;
 }
 
 #Set-Appointment-btn:hover {

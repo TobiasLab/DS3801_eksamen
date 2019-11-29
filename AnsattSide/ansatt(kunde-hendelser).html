@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/AnsattStyling/ansatt(kunde-hendelser).css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -86,14 +88,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr  class='clickable-row' data-toggle="modal" data-target="#exampleModal">
                             <th scope="row">1</th>
-                            <td>img</td>
+                            <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
                             <td class="kunde">Mark Otto</td>
                             <td>Akupunktur</td>
                             <td>18.11.2019</td>
                             <td id="status">Aktiv</td>
-                            <td id="buttton_view" button type="button" class="btn btn new" data-toggle="modal" data-target="#exampleModal">View</td>
+                            <td><button type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-check-circle"></i> Fullfør</button></td>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -116,14 +118,14 @@
                                 </div>
                             </div>
                         </tr>
-                        <tr>
+                        <tr  class='clickable-row' data-toggle="modal" data-target="#exampleModal2">
                             <th scope="row">2</th>
-                            <td>img</td>
+                            <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
                             <td class="kunde">Jacob Thornton</td>
                             <td>Osteopati</td>
-                            <td>1.12.2019</td>
+                            <td>01.12.2019</td>
                             <td id="status-2">Venter på godkjenning</td>
-                            <td id="buttton_view" button type="button" class="btn btn new" data-toggle="modal" data-target="#exampleModal2">View</td>
+                            <td><button type="button" class="btn btn-outline-primary btn-sm"> Godkjenn</button></td>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -146,14 +148,14 @@
                                 </div>
                             </div>
                         </tr>
-                        <tr class='clickable-row' data-href='url://www.vg.no'>
+                        <tr  class='clickable-row' data-toggle="modal" data-target="#exampleModal3">
                             <th scope="row">3</th>
-                            <td>img</td>
+                            <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
                             <td class="kunde">David Laid</td>
                             <td>Kostholdveiledning</td>
-                            <td>4.01.2020</td>
+                            <td>04.01.2020</td>
                             <td id="status">Aktiv</td>
-                            <td id="buttton_view" button type="button" class="btn btn new" data-toggle="modal" data-target="#exampleModal3">View</td>
+                            <td><button type="button" class="btn btn-outline-success btn-sm"><i class="fas fa-check-circle"></i> Fullfør</button></td>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">

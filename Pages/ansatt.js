@@ -144,9 +144,10 @@ $(function() {
 });
 
 /*Click on row in table function*/
-jQuery(document).ready(function($) {
     $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
+        $('#myInput').trigger('focus')
     });
-});
 
+$('table').on('click','.delete',function(){
+  $(this).parents('tr').remove();
+});

@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/AnsattStyling/ansatt(kunde-hendelser).css">
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -74,27 +78,26 @@
                         <a class="nav-link active" id="nav-active" href="#">Historikk</a>
                     </li>
                 </ul>
-                <table class="table">
+                                <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Type</th>
-                            <th scope="col">Dato</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Handling</th>
+                            <th scope="col" class="table-header">#</th>
+                            <th scope="col" class="table-header" colspan="2">Kunde</th>
+                            <th scope="col" class="table-header">Type</th>
+                            <th scope="col" class="table-header">Dato</th>
+                            <th scope="col" class="table-header">Status</th>
+                            <th scope="col" class="table-header">Handling</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr  class='clickable-row' data-toggle="modal" data-target="#exampleModal">
                             <th scope="row">1</th>
-                            <td>Vera</td>
-                            <td>Klang</td>
+                            <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
+                            <td class="kunde">Vera Klang</td>
                             <td>Osteopati</td>
-                            <td>3.12.2018</td>
-                            <td id="status_historikk">Ferdig</td>
-                            <td id="buttton_view" button type="button" class="btn btn new" data-toggle="modal" data-target="#exampleModal">View</td>
+                            <td>03.12.2018</td>
+                            <td id="status">Ferdig</td>
+                            <td><button type="button" class="btn btn-outline-danger btn-sm delete"><i class="fas fa-exclamation-circle"></i> Slett</button></td>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -108,7 +111,7 @@
                                         <div class="modal-body">
                                             <img src="/Bilder/vwang.jpg" class="img-fluid" alt="Responsive image">
                                             <h2 id="modal-text">Vera Klang</h2>
-                                            <p id="modal-text">Vært medlem for studentklinikken siden 2015.</p>
+                                            <p id="modal-text">Vært medlem av studentklinikken siden 2015.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -117,14 +120,14 @@
                                 </div>
                             </div>
                         </tr>
-                        <tr>
+                        <tr  class='clickable-row' data-toggle="modal" data-target="#exampleModal2">
                             <th scope="row">2</th>
-                            <td>Ryan</td>
-                            <td>Garcia</td>
+                            <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
+                            <td class="kunde">Ryan Garcia</td>
                             <td>Osteopati</td>
-                            <td>13.05.2019</td>
+                            <td>12.05.2018</td>
                             <td id="status-historikk_2">Kansellert</td>
-                            <td id="buttton_view" button type="button" class="btn btn new" data-toggle="modal" data-target="#exampleModal2">View</td>
+                            <td><button type="button" class="btn btn-outline-danger btn-sm delete"><i class="fas fa-exclamation-circle"></i> Slett</button></td>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -138,7 +141,7 @@
                                         <div class="modal-body">
                                             <img src="/Bilder/DeaZ-6fV0AIhFnc.jpg" class="img-fluid" alt="Responsive image">
                                             <h2 id="modal-text">Ryan Garcia</h2>
-                                            <p id="modal-text">Ikke medlem for studentklinikken.</p>
+                                            <p id="modal-text">Ikke medlem av studentklinikken.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -147,14 +150,14 @@
                                 </div>
                             </div>
                         </tr>
-                        <tr>
+                        <tr  class='clickable-row' data-toggle="modal" data-target="#exampleModal3">
                             <th scope="row">3</th>
-                            <td>Emil</td>
-                            <td>Halvorsen</td>
+                            <td><img src="/Bilder/Deafult-Profile.png" alt="Avatar" class="kunde-bilde"></td>
+                            <td class="kunde">Emil Halvorsen</td>
                             <td>Kostholdveiledning</td>
-                            <td>1.03.2013</td>
-                            <td id="status_historikk">Ferdig</td>
-                            <td id="buttton_view" button type="button" class="btn btn new" data-toggle="modal" data-target="#exampleModal3">View</td>
+                            <td>01.03.2013</td>
+                            <td id="status">Ferdig</td>
+                            <td><button type="button" class="btn btn-outline-danger btn-sm delete"><i class="fas fa-exclamation-circle"></i> Slett</button></td>
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -168,7 +171,7 @@
                                         <div class="modal-body">
                                             <img src="/Bilder/bilde.php.jpg" class="img-fluid" alt="Responsive image">
                                             <h2 id="modal-text">Emil Halvorsen</h2>
-                                            <p id="modal-text">Vært medlem for studentklinikken siden 2011.</p>
+                                            <p id="modal-text">Vært medlem av studentklinikken siden 2011.</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
