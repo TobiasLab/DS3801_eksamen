@@ -57,15 +57,7 @@ body, html {
     color: black;
 }
 
-#textbox {
-    position: relative;
-    top: 20%;
-    margin-top: 30px;
-    margin-left: 15px;
-    font-size: 15px;
-    color: black;
-    bottom: 100%;
-}
+
 
 /* Button */
 #log_in_button {
@@ -73,7 +65,7 @@ body, html {
     align-content: center;
     vertical-align: middle;
     width: 225px;
-    margin-top: 600px;
+    margin-top: 100px;
     margin-left: 80px;
     background-color: #50297A;
     border-radius: 10px;
@@ -85,6 +77,38 @@ body, html {
     color: white;
     font-weight: 200
 }
+
+/* Circle */
+#circle {
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#circle2 {
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#circle3 {
+    background: #50297A;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+
+#info {
+
+}
+
+#info {
+
+}
+
 
 
   
