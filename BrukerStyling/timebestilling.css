@@ -7,17 +7,20 @@ h1 {
     top: 0;
     margin: 0;
     margin-bottom: 20px;
+    font-family: 'Alata', sans-serif;
 }
 
 #title{
     color: black;
     margin-left: 2%;
-    margin-top: 5%
+    margin-top: 5%;
+    font-family: 'Alata', sans-serif;
 }
 
 h3 {
     top: 0;
     margin: 0;
+    font-family: 'Alata', sans-serif;
 }
 
 .timebestilling {
@@ -27,6 +30,7 @@ h3 {
     height: 100%;
     padding: 20px;
     background-color: black;
+    font-family: 'Alata', sans-serif;
 }
 
 .inputGroup {
@@ -38,6 +42,7 @@ h3 {
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
+    font-family: 'Alata', sans-serif;
 }
 
 #maleFemaleButtons {
