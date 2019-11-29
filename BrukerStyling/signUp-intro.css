@@ -77,8 +77,8 @@ body, html {
     margin-left: 80px;
     background-color: #50297A;
     border-radius: 10px;
-    font-size: 50px;
-    height: 50px;
+    font-size: 20px;
+    height: 60px;
 
     text-align: center;
     font-size: 90%;
@@ -86,120 +86,136 @@ body, html {
     font-weight: 200
 }
 
-/* Circle */
-.md-stepper-horizontal {
-	display:table;
-	width:100%;
-	margin:0 auto;
-	background-color:#FFFFFF;
-	box-shadow: 0 3px 8px -6px rgba(0,0,0,.50);
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font: 16px/1.3 sans-serif; }
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 90%; /* Change height */
 }
-.md-stepper-horizontal .md-step {
-	display:table-cell;
-	position:relative;
-	padding:24px;
+
+/* Slider */
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
 }
-.md-stepper-horizontal .md-step:hover,
-.md-stepper-horizontal .md-step:active {
-	background-color:rgba(0,0,0,0.04);
+
+/* Sliders */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
 }
-.md-stepper-horizontal .md-step:active {
-	border-radius: 15% / 75%;
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
 }
-.md-stepper-horizontal .md-step:first-child:active {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; 
 }
-.md-stepper-horizontal .md-step:last-child:active {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+
+.CSSgal .prevNext a {
+	background: #fff;
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px; 
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
 }
-.md-stepper-horizontal .md-step:hover .md-step-circle {
-	background-color:#757575;
+.CSSgal .prevNext a:hover {
+	opacity: 1;
 }
-.md-stepper-horizontal .md-step:first-child .md-step-bar-left,
-.md-stepper-horizontal .md-step:last-child .md-step-bar-right {
-	display:none;
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
 }
-.md-stepper-horizontal .md-step .md-step-circle {
-	width:30px;
-	height:30px;
-	margin:0 auto;
-	background-color:#999999;
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       30px;
+	height:      30px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(255, 255, 255, 0.5); 
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+.CSSgal .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.CSSgal a {
 	border-radius: 50%;
-	text-align: center;
-	line-height:30px;
-	font-size: 16px;
-	font-weight: 600;
-	color:#FFFFFF;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
 }
-.md-stepper-horizontal.green .md-step.active .md-step-circle {
-	background-color:#00AE4D;
-}
-.md-stepper-horizontal.orange .md-step.active .md-step-circle {
-	background-color:#50297A;
-}
-.md-stepper-horizontal .md-step.active .md-step-circle {
-	background-color: rgb(33,150,243);
-}
-.md-stepper-horizontal .md-step.done .md-step-circle:before {
-	font-family:'FontAwesome';
-	font-weight:100;
-	content: "\f00c";
-}
-.md-stepper-horizontal .md-step.done .md-step-circle *,
-.md-stepper-horizontal .md-step.editable .md-step-circle * {
-	display:none;
-}
-.md-stepper-horizontal .md-step.editable .md-step-circle {
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-}
-.md-stepper-horizontal .md-step.editable .md-step-circle:before {
-	font-family:'FontAwesome';
-	font-weight:100;
-	content: "\f040";
-}
-.md-stepper-horizontal .md-step .md-step-title {
-	margin-top:16px;
-	font-size:16px;
-	font-weight:600;
-}
-.md-stepper-horizontal .md-step .md-step-title,
-.md-stepper-horizontal .md-step .md-step-optional {
-	text-align: center;
-	color:rgba(0,0,0,.26);
-}
-.md-stepper-horizontal .md-step.active .md-step-title {
-	font-weight: 600;
-	color:rgba(0,0,0,.87);
-}
-.md-stepper-horizontal .md-step.active.done .md-step-title,
-.md-stepper-horizontal .md-step.active.editable .md-step-title {
-	font-weight:600;
-}
-.md-stepper-horizontal .md-step .md-step-optional {
-	font-size:12px;
-}
-.md-stepper-horizontal .md-step.active .md-step-optional {
-	color:rgba(0,0,0,.54);
-}
-.md-stepper-horizontal .md-step .md-step-bar-left,
-.md-stepper-horizontal .md-step .md-step-bar-right {
-	position:absolute;
-	top:36px;
-	height:1px;
-	border-top:1px solid #DDDDDD;
-}
-.md-stepper-horizontal .md-step .md-step-bar-right {
-	right:0;
-	left:50%;
-	margin-left:20px;
-}
-.md-stepper-horizontal .md-step .md-step-bar-left {
-	left:0;
-	right:50%;
-	margin-right:20px;
+
+#Aku {
+    margin-bottom: 500px;
 }
