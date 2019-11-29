@@ -29,7 +29,7 @@ li a {
     color: #50297A;
     font-size: 13px;
     text-align: center;
-    padding: 18px 16px;
+    padding: 18px 1px;
     text-decoration: none;
     font-family: 'Alata', sans-serif;
 }
@@ -85,4 +85,9 @@ li a {
 
 .fa-user:hover {
     color: rebeccapurple;
+}
+
+.fa-angle-right {
+    color: #50297A;
+    margin-left: 15px;
 }

@@ -33,8 +33,7 @@ html {
 
 #Set-Appointment-btn {
     position: relative;
-    margin-left: 28px;
-    margin-top: -100%;
+    width: 100%;
     margin-bottom: -25%;
     background-color: white;
     border: none;
@@ -51,14 +50,20 @@ html {
     font-family: 'Alata', sans-serif;
 }
 
+@media only screen and (max-width: 414px) {
+  #Set-Appointment-btn {
+    font-size: 12px;
+  }
+}
+
 #Set-Appointment-btn:hover {
-    background-color: #50297A;
-    color: white;
+    color: #50297A;
+    font-weight: bold;
 }
 
 #landingPage {
     position: relative;
-    margin-top: 45px;
+    margin-top: 75px;
 }
 
 #logo {
@@ -93,8 +98,8 @@ html {
     display: inline-block;
     font-size: 13px;
     transition-duration: 0.4s;
-    -webkit-box-shadow: -1px 7px 29px 14px rgba(0,0,0,0.1);
--moz-box-shadow: -1px 7px 29px 14px rgba(0,0,0,0.1);
-box-shadow: -1px 7px 29px 14px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -1px 7px 29px 14px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -1px 7px 29px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 7px 29px 14px rgba(0, 0, 0, 0.1);
     font-family: 'Alata', sans-serif;
 }
