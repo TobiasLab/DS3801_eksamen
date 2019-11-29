@@ -35,7 +35,14 @@ h2 {
     border-left: 3px solid #50297A;
 }
 
-.dag {
+#dag1 {
+    display: block;
+    position: relative;
+    margin: 15px;
+}
+
+#dag2 {
+    display: block;
     position: relative;
     margin: 15px;
 }

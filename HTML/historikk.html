@@ -25,7 +25,7 @@
                 pasient ved Studentklinikken tilhørende Institutt for Helsevitsenskap.
             </a>
 
-            <button class="btn btn-info" id="log_in_button" role="button">
+            <button class="btn btn-info" id="log_in_button" role="button" onclick="hideAkupunktur()">
                     Avbestill time
             </button>
         </div>
@@ -48,7 +48,7 @@
                     pasient ved Studentklinikken tilhørende Institutt for Helsevitsenskap.
                 </a>
     
-                <button class="btn btn-info" id="log_in_button" role="button">
+                <button class="btn btn-info" id="log_in_button" role="button" onclick="hideOsteopati()">
                         Avbestill time
                 </button>
             </div>
@@ -63,8 +63,8 @@
     </div>
 
     <div id="bestillinger">
-        <a class="dag">I dag</a>
         <div id="akupunktur" class="bestillingContainer">
+            <a id="dag1">I dag</a>
             <div id="akupunkturBestilling" class="bestillingBox"  onclick="showAkupunktur()">
                 <a class="behandling">Akupunktur</a>
                 <a id="tid">Kl 08:30</a>
@@ -72,7 +72,7 @@
         </div>
 
         <div id="osteopati" class="bestillingContainer">
-            <a class="dag">Lørdag</a>
+            <a id="dag2">Lørdag</a>
             <div id="osteopatiBestilling" class="bestillingBox" onclick="showOsteopati()">
                     <a class="behandling">Osteopati</a>
                     <a id="tid">Kl 12:15</a>
