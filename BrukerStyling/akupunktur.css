@@ -1,51 +1,58 @@
-body, html {
+body,
+html {
     margin: 0;
     height: 100%;
     width: auto;
     font-family: 'Lato', sans-serif;
 }
-#header {
-    background-color: #50297A;
-    margin-bottom: 30px;
-}
+
 #akuPage {
     position: relative;
     margin-top: 15px;
 }
 
-#logo {
-    position: relative;
-    margin-left: 5px;
-    margin-top: 15px;
-    height: 30px;
-    width: auto;
-    top: 100;
+#header {
+    text-align: left;
 }
+
+#logo {
+    height: 30px;
+}
+
 #title {
     margin-top: 10px;
     margin-left: 50px;
     font-size: 32px;
-    color: white;
+    color: #50297A;
     font-weight: bolder;
 }
+
 #akkupointment {
     position: relative;
     top: 20%;
-    margin-top: 30px;
-    margin-left: 15px;
-    font-size: 20px;
-    color: white;
+    margin-top: -20px;
+    margin-left: 50px;
+    font-size: 15px;
+    color: darkgrey;
     bottom: 100%;
 
 }
+
 #textbox {
     position: relative;
     top: 20%;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 15px;
     font-size: 15px;
     color: black;
     bottom: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#Akupunktur {
+    margin-left: 10%;
+    width: 80%;
+    position: relative;
 }
 
 .akupunkt-btn {
@@ -61,43 +68,46 @@ body, html {
     display: inline-block;
     font-size: 13px;
     transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-weight: bolder;
 }
+
 .box {
     width: 40%;
     margin: 0 auto;
-    background: rgba(255,255,255,0.2);
-    padding: 35px;
-    border: 2px solid #fff;
+    padding: 10px;
     border-radius: 20px/50px;
     background-clip: padding-box;
     text-align: center;
-  }
-  
-  .button {
+}
+
+.button {
     font-size: 1em;
-    padding: 10px;
-    color: 50297A;
-    border: 2px solid #50297A;
-    border-radius: 20px/50px;
+    margin-left: 5%;
+    padding: 10px 0px;
+    background-color: #50297A;
+    color: white;
     text-decoration: none;
+    font-size: 15px;
     cursor: pointer;
     transition: all 0.3s ease-out;
-  }
-  .button:hover {
-    background:white;
-  }
-  #options {
+}
+
+.button:hover {
+    color: rebeccapurple;
+}
+
+#options {
     position: relative;
     bottom: 20%;
     color: grey;
     margin-bottom: 20px;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 50%;
 }
-  .overlay {
+
+.overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -107,13 +117,14 @@ body, html {
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .popup {
+}
+
+.popup {
     margin: 70px auto;
     padding: 20px;
     background: #fff;
@@ -121,17 +132,19 @@ body, html {
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
-  }
-  .content1{
-      font-size: 20;
-  }
-  
-  .popup h2 {
+}
+
+.content1 {
+    font-size: 20;
+}
+
+.popup h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-  }
-  .popup .close {
+}
+
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -140,22 +153,23 @@ body, html {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-  }
-  .popup .close:hover {
-    color:#50297A ;
-  }
-  .popup .content {
+}
+
+.popup .close:hover {
+    color: #50297A;
+}
+
+.popup .content {
     max-height: 30%;
     overflow: auto;
-  }
-  
-  @media screen and (max-width: 700px){
-    .box{
-      width: 70%;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
     }
-    .popup{
-      width: 70%;
+
+    .popup {
+        width: 70%;
     }
-  }
-  
-  
+}

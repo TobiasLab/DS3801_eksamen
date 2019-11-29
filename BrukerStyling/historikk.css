@@ -1,43 +1,42 @@
 html,
 body {
     height: 100%;
+    margin-bottom: 5%;
     background-color: #f6f6f6;
 }
 
-.col-left {
-    background-color: #ffffff;
-    box-shadow: 10px grey;
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    text-align: center;
-    padding-top: 10%
+
+h1{
+    position: relative;
+    margin-left: 12%;
+    margin-top: 5%;
+    position: relative;
+    margin-left: 12%;
+    display: flex;
+    white-space: normal;
+
 }
 
-.bg_right {
+#historikk{
+    position: relative;
+    margin-left: 38%;
+    margin-top: -9.4%;
+        position: relative;
     background-color: #50297A;
-    height: 8%;
-    width: 100%;
-    position: fixed;
+    color: white;
+    padding: 8px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
 }
 
-#bg_title {
-    font-size: 25px;
-    color: darkslateblue;
-    padding-top: 5%;
+#note-active {
+    font-weight: bolder;
 }
 
-#profile {
-    width: 120px;
-    height: 120px; 
-}
-
-
-#time-active{
-    font-weight:bolder;
-}
-
-.nav-link{
+.nav-link {
     color: black;
 }
 
@@ -45,14 +44,15 @@ body {
     text-align: center;
     width: 100%;
     
+
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: rebeccapurple;
 }
 
 #logo {
-    width: 5%; 
+    width: 5%;
     margin-left: -8%;
 }
 
@@ -60,25 +60,13 @@ body {
 #bg_title_2 {
     font-size: 25px;
     color: white;
-    margin-left: 35%
-    
+    margin-left: 35%;
+    font-family: 'Alata', sans-serif;
 }
 
 .object {
     padding-top: 10%;
     width: 55%;
-    
-}
-th {
-    font-weight: 400;
-}
-
-#status {
-    color: limegreen;
-}
-
-#status-2 {
-    color: royalblue
 }
 
 .top {
@@ -90,83 +78,69 @@ th {
     font-size: 25px;
     margin-top: 10%;
     color: darkgrey;
-    
-}
+    font-family: 'Alata', sans-serif;
 
-.table{
-    margin-top: 15px;
-    font-size: 14px;
 }
 
 #nav-active {
     background-color: #50297A;
 }
 
-
-#nav-historikk {
-    background-color: #50297A;
-}
-
-
 .md-form {
     margin-left: 25%;
     margin-top: 2%;
 }
 
-#buttton_view {
+p {
+    font-family: 'Alata', sans-serif;
+    /*paragraph standard*/
+    font-size: 1.0em;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #666;
+    
+}
+
+
+/*h2 standard*/
+h2 {
+    color: #006d9c;
+    cursor: text;
+}
+
+.list-group-item.active, .list-group-item.active:hover{
+    background-color: rebeccapurple; !important
+}
+
+
+.col-4 {
+    margin-left: 12%;
+    margin-top: 5%;
+    z-index: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+#hk-logo{
+    width: 5%;
+    margin-left: 28%;
+    margin-top: -7.5%;
+    font-family: 'Alata', sans-serif;
+}
+
+.col-8 {
+    margin-left: 55%;
+    margin-top: -10%;
+}
+
+.new {
     background-color: #50297A;
     color: white;
-    width: 80%;
 }
 
-#buttton_view:hover {
-    background-color: rebeccapurple;
+.new:hover {
     color: white;
-    width: 80%;
+    background-color: rebeccapurple;
 }
 
-.modal-body {
-    position: relative;
-}
 
-#modal-text{
-    position: relative;
-    text-align: center;
-}
 
-#status_historikk{
-    color: cornflowerblue;
-}
-
-#status-historikk_2 {
-    color: orangered;
-}
-
-/*Table edit*/
-
-.table-striped.table-hover>tbody>tr:hover>td, 
-.table-striped.table-hover>tbody>tr:hover>th {
-  background-color: #efefef;
-}
-
-.table-header{
-    font-weight: bold;
-    color: #50297A;
-}
-
-.kunde{
-    font-weight: bold;
-    color: #50297A;
-
-}
-.kunde-bilde{
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-.clickable-row{
-    cursor: pointer;
-}

@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
-    <link rel="stylesheet" type="text/css" href="/BrukerStyling/landingPage.css">
+    <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="TimebestillingHead">
-        <header id="header">
-            <img src="/Bilder/HK_Logo_icon_2.png" id="logo">
             <h1 id="title">Timebestilling</h1>
-        </header>
+    </div>
         <div id="Appointment-block">
             <!DOCTYPE html>
             <html lang="en">
 
             <head>
-                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <script src="/Pages/timebestilling.js"></script>
                 <link rel="stylesheet" type="text/css" href="/BrukerStyling/timebestilling.css">
                 <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
@@ -33,27 +41,31 @@
 
             <body>
 
-                <!--Timebestilling page-->
+                <div class="form-group">
+                    <div class="input-group mb-3">
 
-                <div id="page1" class="timebestilling">
-
-                    <div class="inputGroup" id="inputGroup1">
-                        <h3>Fornavn</h3>
-                        <input type="text" id="fornavnInput">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Fornavn" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Etternavn" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
 
-                    <div class="inputGroup" id="inputGroup2">
-                        <h3>Etternavn</h3>
-                        <input type="text" id="etternavnInput">
-                    </div>
-
-                    <div class="inputGroup" id="inputGroup3">
-                        <h3>Hvilken behandling vil du ha?</h3>
-                        <select>
-                            <option value="akupunktur">Akupunktur</option>
-                            <option value="osteopati">Osteopati</option>
-                            <option value="kostholdveiledning">Kostholdveiledning</option>
-                            <option value="fysiologisk_testlab">Fysiologisk testlab</option>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">Akupunktur</option>
+                            <option value="2">Osteopati</option>
+                            <option value="3">Kostholdveiledning</option>
+                            <option value="3">Fysiologisk testlab</option>
                         </select>
                     </div>
 
@@ -72,17 +84,17 @@
                         </div>
                     </div>
 
-                    <div class="inputGroup" id="inputGroup6">
-                        <h3>Noe vi burde vite?</h3>
-                        <textarea rows="5" cols="43">
 
-                                </textarea>
+                    <div class="input-group" id="group-box">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="box">Noe vi burde vite?</span>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
                     </div>
 
                     <button class="btn btn-info" id="log_in_button" role="button">
                         Bestill time
                     </button>
-                </div>
 
                 <nav class="navbar">
 
@@ -104,6 +116,7 @@
                         </ul>
                     </div>
                 </nav>
+                
+                                    </div>
             </body></html>
-            </div>
-        </div>
+

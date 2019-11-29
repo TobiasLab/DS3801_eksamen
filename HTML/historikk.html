@@ -5,111 +5,106 @@
     <script src="/Pages/historikk.js"></script>
     <link rel="stylesheet" type="text/css" href="/BrukerStyling/historikk.css">
     <link rel="stylesheet" type="text/css" href="/BrukerStyling/navbar.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Alata|IBM+Plex+Sans:100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="avbestilling" class="bottomDiv">
-        <div id="avbestillingBox">
-            <h1 id="avbestillingTop" class="avbestillingInnhold">Aktiv: Akupunktur</h1>
-            <a class="avbestillingInnhold">Tid: kl 08:30</a>
-            <a class="avbestillingInnhold">Adresse: Prinsens gate 9, 0153 Oslo.</a>
-            <a class="avbestillingInnhold">Pris: 300,- / rabatt* 150,-</a>
-            <a class="avbestillingInnhold">Dine rettigheter som pasient</a>
-            <a id="rettigheter1" class="avbestillingInnhold">
-                Vi forholder oss til en rekke lover og regler som ivarentar dine pasientrettigheter.
-                Våre studenter må rsamtykke til å følgee dette lovverketfør de starter sin kliniske
-                praksisperiode.
-            </a>
-            <a id="rettigheter2" class="avbestillingInnhold">
-                Under følger en oversikt over de mest relevante bestemmelsene for deg som
-                pasient ved Studentklinikken tilhørende Institutt for Helsevitsenskap.
-            </a>
 
-            <button class="btn btn-info" id="log_in_button" role="button" onclick="hideAkupunktur()">
-                    Avbestill time
-            </button>
-        </div>
-    </div>
+    <h1>Avtaler</h1>
 
-    <div id="avbestilling2" class="bottomDiv2">
-            <div id="avbestillingBox">
-                <h1 id="avbestillingTop" class="avbestillingInnhold">Aktiv: Osteopati</h1>
-                <a class="avbestillingInnhold">Tid: kl 12:15</a>
-                <a class="avbestillingInnhold">Adresse: Prinsens gate 9, 0153 Oslo.</a>
-                <a class="avbestillingInnhold">Pris: 300,- / rabatt* 150,-</a>
-                <a class="avbestillingInnhold">Dine rettigheter som pasient</a>
-                <a id="rettigheter1" class="avbestillingInnhold">
-                    Vi forholder oss til en rekke lover og regler som ivarentar dine pasientrettigheter.
-                    Våre studenter må rsamtykke til å følgee dette lovverketfør de starter sin kliniske
-                    praksisperiode.
-                </a>
-                <a id="rettigheter2" class="avbestillingInnhold">
-                    Under følger en oversikt over de mest relevante bestemmelsene for deg som
-                    pasient ved Studentklinikken tilhørende Institutt for Helsevitsenskap.
-                </a>
-    
-                <button class="btn btn-info" id="log_in_button" role="button" onclick="hideOsteopati()">
-                        Avbestill time
-                </button>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Aktive</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#">Historikk</a>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="avbestilling2" class="bottomDiv2">
+                        <div id="avbestillingBox">
+                            <h1 id="avbestillingTop" class="avbestillingInnhold">Aktiv: Akupunktur</h1>
+                            <a class="avbestillingInnhold">Tid: kl 12:15</a>
+                            <a class="avbestillingInnhold">Adresse: Prinsens gate 9, 0153 Oslo.</a>
+                            <a class="avbestillingInnhold">Pris: 300,- / rabatt* 150,-</a>
+                            <a class="avbestillingInnhold">Dine rettigheter som pasient</a>
+                            <a id="rettigheter1" class="avbestillingInnhold">
+                                Vi forholder oss til en rekke lover og regler som ivarentar dine pasientrettigheter.
+                                Våre studenter må rsamtykke til å følgee dette lovverketfør de starter sin kliniske
+                                praksisperiode.
+                            </a>
+                            <a id="rettigheter2" class="avbestillingInnhold">
+                                Under følger en oversikt over de mest relevante bestemmelsene for deg som
+                                pasient ved Studentklinikken tilhørende Institutt for Helsevitsenskap.
+                            </a>
+
+                            <button class="btn btn-info" id="log_in_button" role="button" onclick="hideOsteopati()">
+                                Avbestill time
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-    <div id="aktivOgHistorikk" class="topDiv">
-        <h1>Avtaler</h1>
-        <div class="aktiveHistorikk">
-            <h2 id="aktive">Aktive</h2>
-            <h2 id="historikk">Historikk</h2>
-        </div>
     </div>
-
-    <div id="bestillinger">
-        <div id="akupunktur" class="bestillingContainer">
-            <a id="dag1">I dag</a>
-            <div id="akupunkturBestilling" class="bestillingBox"  onclick="showAkupunktur()">
-                <a class="behandling">Akupunktur</a>
-                <a id="tid">Kl 08:30</a>
-            </div>
-        </div>
-
-        <div id="osteopati" class="bestillingContainer">
-            <a id="dag2">Lørdag</a>
-            <div id="osteopatiBestilling" class="bestillingBox" onclick="showOsteopati()">
-                    <a class="behandling">Osteopati</a>
-                    <a id="tid">Kl 12:15</a>
+    <!-- Page Content  -->
+    <div id="container tab">
+        <div class="row">
+            <div class="col-4">
+                <h3>I dag</h3>
+                <div class="list-group" id="myList" role="tablist">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> <a class="list-group-item list-group-item-action active" data-toggle="list" href="#mark" role="tab">Akupunktur <br></a>
+                    </button>
                 </div>
             </div>
-    </div>
 
-    
+        </div>
+ </div>
 
-    <!--Notat: Lag boksene slik at de ikke ser dumme ut
+        <!--Notat: Lag boksene slik at de ikke ser dumme ut
+            <!--Notat: Lag boksene slik at de ikke ser dumme ut
     Når man trykker på divven, blir en annen div display:block. Der kan man også trykke på avbestill,
     som gjør divven til display:none, og åpne divven til display:none. Samme for begge boksene.-->
 
- <nav class="navbar">
+        <nav class="navbar">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
 
-                    <a class="nav-link" href="#"><i class="fas fa-home"></i> <br> Hjem <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i> <br>Timebestilling</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> <i class="fas fa-calendar-check"></i> <br>Avtaler</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> <i class="fas fa-user"></i> <br> Profil</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</body>
-
-</html>
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> <br> Hjem <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-clipboard-list"></i> <br>Timebestilling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fas fa-calendar-check"></i> <br>Avtaler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <i class="fas fa-user"></i> <br> Profil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+   
+</body></html>
